@@ -541,6 +541,28 @@ img {
   color: var(--color-white);
 }
 /* Media queries */
+
+/* Mobile fix – make the contact form fill the viewport on very narrow screens (≤ 375 px) */
+@media (max-width: 640px) {
+  /* Remove horizontal padding that otherwise forces overflow */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header-container {
+    padding-left: 0.75rem;
+  }
+  /* Stretch the contact‑form container and the form itself */
+  .contact-form-container,
+  .contact-form {
+    width: 100vw;          /* full viewport width */
+    max-width: 100%;       /* don’t exceed the viewport */
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 @media (min-width: 640px) {
   .hero-buttons {
     flex-direction: row;
