@@ -31,6 +31,13 @@
     src: url("assets/nexa-book.otf") format("opentype");
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -98,6 +105,52 @@ img {
   display: inline-block;
   transform: translateY(2px); /* moves only the text */
 }
+.required-star {
+  color: #d93025;          /* a vivid red */
+  margin-left: 0.15em;     /* tiny space after the label text */
+  font-size: 0.9em;        /* slightly smaller than the label */
+  vertical-align: middle; /* keep it aligned with the text baseline */
+}
+/* ---- button states --------------------------------------------------- */
+.btn-send {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* success / error colours – you can tweak them */
+.btn-success { background:#28a745 !important; color:#fff !important; }
+.btn-error   { background:#dc3545 !important; color:#fff !important; }
+button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
+/* ---- simple spinner (CSS only) -------------------------------------- */
+.dots {
+  display: inline-flex;
+  gap: .75rem;                     /* space between the three circles */
+}
+
+/* --------------------------------------------------------------
+   4️⃣  Individual dot – tiny circle that fades in/out
+   -------------------------------------------------------------- */
+.dots span {
+  width: .35rem;
+  height: .35rem;
+  background: currentColor;        /* inherits button colour */
+  border-radius: 50%;
+  opacity: 0;                      /* start invisible */
+  animation: dot-fade 1.2s infinite;
+}
+
+/* Stagger the three dots */
+.dots span:nth-child(1) { animation-delay: 0s; }
+.dots span:nth-child(2) { animation-delay: 0.2s; }
+.dots span:nth-child(3) { animation-delay: 0.4s; }
+
+/* --------------------------------------------------------------
+   5️⃣  Fade animation – 0 → 1 → 0 (smooth)
+   -------------------------------------------------------------- */
+@keyframes dot-fade {
+  0%, 80% { opacity: 0; }
+  40%    { opacity: 1; }
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -237,6 +290,7 @@ img {
   font-size: 1.25rem;
   color: var(--color-primary-lightest);
   max-width: 28rem;
+  
 }
 .hero-buttons {
   margin-top: 2rem;
@@ -333,6 +387,7 @@ img {
 .about-text {
   color: var(--color-gray-600);
   margin-bottom: 1rem;
+  text-align: justify;
 }
 .about-badges {
   display: flex;
@@ -541,7 +596,9 @@ img {
   color: var(--color-white);
 }
 /* Media queries */
-
+@media (max-width: 334px) { 
+  .logo-badge {display:none;}
+}
 /* Mobile fix – make the contact form fill the viewport on very narrow screens (≤ 375 px) */
 @media (max-width: 640px) {
   /* Remove horizontal padding that otherwise forces overflow */
@@ -551,6 +608,37 @@ img {
   }
   .header-container {
     padding-left: 0.75rem;
+  }
+  .menu-toggle {
+    padding-right: 0.75rem;
+  }
+  .mobile-menu-container {
+    padding-left: 0.75rem;
+  }
+  .hero-content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;  
+  } 
+  .services {
+    padding: 0 0.75rem;
+  }
+  .services > div > div > h2 {
+    padding: 1rem 0;
+  }
+  .about {
+    padding: 0 0.75rem 1rem 0.75rem;
+  }
+  .testimonials > .container {
+    padding: 0 0.75rem;
+  }
+  .contact {
+    padding: 0 0.75rem;
+  }
+  .contact-info {
+    padding: 0 0.75rem;
+  }
+  .contact > div > div > h2 {
+    padding: 1rem 0;
   }
   /* Stretch the contact‑form container and the form itself */
   .contact-form-container,
