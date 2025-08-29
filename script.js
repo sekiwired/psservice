@@ -80,6 +80,9 @@ if (contactForm) {
       btnSubmit.classList.add('btn-error');
       document.getElementById('name').focus();
       document.getElementById('name').style.outline='2px solid #d93025';
+      setTimeout(() => {
+          document.getElementById('name').style.outline = '';
+      }, 3000);
       setTimeout(resetButton, 3000);
       return;
     }
