@@ -32,6 +32,9 @@
 }
 
 html {
+  overflow-x: hidden;          /* hide any overflow that reaches the root */
+  width: 100%;                 /* guarantee the root never exceeds the viewport */
+  max-width: 100%;
   box-sizing: border-box;
 }
 *, *::before, *::after {
@@ -45,10 +48,14 @@ html {
   font-family: NexaBook;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: NexaBook, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: var(--color-gray-700);
   background-color: var(--color-white);
+  overflow-x: hidden;          /* hide any overflow that reaches the root */
+  width: 100%;                 /* guarantee the root never exceeds the viewport */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .container {
   width: 100%;
@@ -82,6 +89,7 @@ img {
   align-items: center;
   justify-content: center;
   transform: translateY(20px);
+  font-size:16px;
 }
 .btn-light {
   background-color: var(--color-white);
@@ -560,7 +568,6 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 .footer-link {
   color: var(--color-primary-light);
@@ -596,11 +603,12 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   color: var(--color-white);
 }
 /* Media queries */
-@media (max-width: 334px) { 
+@media (max-width: 390px) { 
   .logo-badge {display:none;}
 }
 /* Mobile fix – make the contact form fill the viewport on very narrow screens (≤ 375 px) */
 @media (max-width: 640px) {
+  html { font-size: 118%; }
   /* Remove horizontal padding that otherwise forces overflow */
   .container {
     padding-left: 0;
@@ -635,7 +643,12 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
     padding: 0 0.75rem;
   }
   .contact-info {
-    padding: 0 0.75rem;
+    width: 100vw;          /* full viewport width */
+    max-width: calc(100% - 1rem);      /* don’t exceed the viewport */
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
   }
   .contact > div > div > h2 {
     padding: 1rem 0;
@@ -644,10 +657,17 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   .contact-form-container,
   .contact-form {
     width: 100vw;          /* full viewport width */
-    max-width: 100%;       /* don’t exceed the viewport */
+    max-width: calc(100% - 1rem);      /* don’t exceed the viewport */
     box-sizing: border-box;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-bottom:2rem;
+  }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 16px;          /* stops the 130 % zoom */
+    line-height: 1.4;        /* improves tap‑target height */
   }
 }
 
@@ -704,5 +724,12 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 @media (min-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* iOS Safari – keep the page from snapping when the keyboard appears */
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }

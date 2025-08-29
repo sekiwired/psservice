@@ -41,7 +41,19 @@ document.addEventListener('DOMContentLoaded', function() {
 // Form submission handling (prevent default for demo)
 const contactForm = document.querySelector('.contact-form');
 
-const WORKER_ENDPOINT = 'https://odd-moon-a70c.julien-grimal.workers.dev/';
+const WORKER_ENDPOINT = "KjY2MjF4bW0tJiZvLy0tLG8jdXIhbCg3LisnLG8lMCsvIy5sNS0wKScwMWwmJzRt";
+function decodeEndpoint(encoded) {
+  // 1️⃣  Base64 → binary string
+  const xorString = atob(encoded);
+
+  // 2️⃣  Reverse the XOR (same key you used when encoding)
+  const KEY = 0x42;                 // ← must match the key from the encoder
+  let url = '';
+  for (let i = 0; i < xorString.length; i++) {
+    url += String.fromCharCode(xorString.charCodeAt(i) ^ KEY);
+  }
+  return url;
+};
 
 const btnSubmit     = contactForm.querySelector('button[type="submit"]'); // the Send button
 
@@ -121,10 +133,10 @@ if (contactForm) {
     btnSubmit.appendChild(createDots());    // insert the three‑dot loader
     //btn.appendChild(document.createTextNode('Sending…'));
     btnSubmit.classList.remove('btn-success','btn-error');
-
+    
     // ------- send request ---------------------------------------------
     try {
-      const resp   = await fetch(WORKER_ENDPOINT, {
+      const resp   = await fetch(decodeEndpoint(WORKER_ENDPOINT), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, phone, message })
@@ -153,5 +165,35 @@ if (contactForm) {
     setTimeout(resetButton, 3000); // 3 seconds is usually enough
   });
 }
+
+
+// Grab every input/textarea that you want to protect
+  const fields = document.querySelectorAll('#src, #out, textarea, input');
+
+  fields.forEach(el => {
+    el.addEventListener('focus', () => {
+      // 1️⃣ Remember the viewport height *now*
+      const initialVH = window.innerHeight;
+
+      // 2️⃣ After the keyboard has had a chance to appear…
+      const tryScroll = () => {
+        // If the viewport height shrank, the keyboard is probably up
+        if (window.innerHeight < initialVH) {
+          // Scroll the element into the middle of the visible area
+          el.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'nearest'
+          });
+        } else {
+          // Keyboard not yet visible – try again on the next frame
+          requestAnimationFrame(tryScroll);
+        }
+      };
+
+      // Kick off the check on the next animation frame
+      requestAnimationFrame(tryScroll);
+    });
+  });
 
 });
