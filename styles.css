@@ -733,3 +733,6 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+
+.logo-badge {display:none;}
+.testimonials {display:none;}
