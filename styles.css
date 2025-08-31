@@ -48,7 +48,7 @@ html {
   font-family: NexaBook;
 }
 body {
-  font-family: NexaBook, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: NexaBook, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: var(--color-gray-700);
   background-color: var(--color-white);
@@ -99,11 +99,11 @@ img {
   background-color: var(--color-primary-lightest);
 }
 .btn-primary {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   color: var(--color-white);
 }
 .btn-primary:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
 }
 .btn-block {
   display: block;
@@ -210,6 +210,7 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   transform: translateY(1.05rem);
   width:200px;
   z-index:100;
+  cursor:pointer;
 }
 .logo-badge {
   margin-left: 0.5rem;
@@ -566,6 +567,7 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 .footer-title {
   font-size: 1.25rem;
   font-weight: 600;
+  cursor:pointer;
 }
 .footer-subtitle {
   font-size: 0.875rem;
@@ -613,6 +615,8 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 /* Media queries */
 @media (max-width: 390px) { 
   .logo-badge {display:none;}
+  .desc-mobile { display:inline; }
+  .desc-tablet { display:none; }
 }
 /* Mobile fix – make the contact form fill the viewport on very narrow screens (≤ 375 px) */
 @media (max-width: 640px) {
@@ -635,6 +639,8 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
     padding-left: 0.75rem;
     padding-right: 0.75rem;  
   } 
+  .desc-mobile { display:inline; }
+  .desc-tablet { display:none; }
   .services {
     padding: 0 0.75rem;
   }
@@ -683,6 +689,7 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   .hero-buttons {
     flex-direction: row;
   }
+  .desc-mobile { display:none; }
 }
 @media (min-width: 768px) {
   .menu-toggle {
@@ -695,6 +702,8 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   .hero-title {
     font-size: 3rem;
   }
+  .desc-mobile { display:none;}
+  .desc-tablet {display:inline;}
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }

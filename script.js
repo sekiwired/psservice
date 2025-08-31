@@ -6,11 +6,31 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileMenu = document.getElementById('mobile-menu');
   const menuIcon = document.getElementById('menu-icon');
   const closeIcon = document.getElementById('close-icon');
-  menuToggle.addEventListener('click', function() {
+  const logo2home = document.getElementById('logo-home');
+  const footer2home = document.getElementById('footer-title');
+  menuToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
     mobileMenu.classList.toggle('hidden');
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
   });
+  logo2home.addEventListener('click', function(e) {
+    e.stopPropagation();
+    window.location.href = "/";
+  });
+  footer2home.addEventListener('click', function(e) {
+    e.stopPropagation();
+    window.location.href = "/";
+  });
+  document.addEventListener('click', (e) => {
+    if (!mobileMenu.classList.contains('hidden')) {
+          e.stopPropagation();
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }
+  });
+  
   // Parallax effect for hero section
   const parallaxBg = document.getElementById('parallax-bg');
   window.addEventListener('scroll', function() {
@@ -26,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         window.scrollTo({
-          top: targetElement.offsetTop - 80, // Offset for header height
+          top: targetElement.offsetTop, // Offset for header height
           behavior: 'smooth'
         });
         // Close mobile menu if open
@@ -38,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
 // Form submission handling (prevent default for demo)
 const contactForm = document.querySelector('.contact-form');
 
