@@ -246,8 +246,8 @@
             <div class="about-badges">
               <span class="badge"><span>Bilingual</span></span>
               <span class="badge"><span>Organised </span></span>
-              <span class="badge"><span>Professional</span></span>
               <span class="badge"><span>Reliable</span></span>
+              <span class="badge"><span>Professional</span></span>
               <span class="badge"><span>Responsive</span></span>
             </div>
           </div>
@@ -352,7 +352,12 @@
 
                     // make canvas clickable
                     c.addEventListener('click', () => {
-                        window.location.href = 'tel:' + digits;
+                        const tempLink = document.createElement('a');
+                        tempLink.href = 'tel:' + digits;
+                        tempLink.style.display = 'none';
+                        document.body.appendChild(tempLink);
+                        tempLink.click();
+                        document.body.removeChild(tempLink);
                     });
 
                     })();
@@ -407,7 +412,12 @@
 
                     // make canvas clickable
                     c.addEventListener('click', () => {
-                        window.location.href = 'mailto:' + decoded;
+                        const tempLink = document.createElement('a');
+                        tempLink.href = 'mailto:' + decoded;
+                        tempLink.style.display = 'none';
+                        document.body.appendChild(tempLink);
+                        tempLink.click();
+                        document.body.removeChild(tempLink);
                     });
 
                 
