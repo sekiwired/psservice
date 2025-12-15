@@ -5,7 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 
+  <!-- PNG icons for modern browsers -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+
+  <!-- Apple touch icon (iOS home screen) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <!-- For Android / Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <!-- Optional: web app manifest -->
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
   <!-- Basic SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +69,7 @@
   }
   </script>
   
-  <title>Pauline Service - Personal Support in Nontron Area</title>
+  <title data-i18n="title">Pauline Service - Personal Support in Nontron Area</title>
   <style>
     .hero {
         height:20vh;
@@ -87,19 +99,19 @@
         <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
       </button>
       <nav class="desktop-nav">
-        <a href="/index.html#services" class="nav-link">Services</a>
-        <a href="/index.html#about" class="nav-link">About</a>
+        <a href="/index.html#services" class="nav-link" data-i18n="header_nav_services">Services</a>
+        <a href="/index.html#about" class="nav-link" data-i18n="header_nav_about">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="/index.html#contact" class="nav-link nav-link-emphasis">Contact</a>
+        <a href="/index.html#contact" class="nav-link nav-link-emphasis" data-i18n="header_nav_contact">Contact</a>
       </nav>
     </div>
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mobile-menu hidden">
       <div class="container mobile-menu-container">
-        <a href="/index.html#services" class="nav-link">Services</a>
-        <a href="/index.html#about" class="nav-link">About</a>
+        <a href="/index.html#services" class="nav-link" data-i18n="header_nav_services">Services</a>
+        <a href="/index.html#about" class="nav-link" data-i18n="header_nav_services">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="/index.html#contact" class="nav-link">Contact</a>
+        <a href="/index.html#contact" class="nav-link" data-i18n="header_nav_services">Contact</a>
       </div>
     </div>
   </header>
@@ -107,10 +119,10 @@
       <div id="parallax-bg" class="parallax-bg"></div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 class="hero-title">Privacy policy</h1>
+        <h1 class="hero-title" data-i18n="page_title_content">Privacy policy</h1>
       </div>
     </section>
-  <div class="privacy-container">
+  <div class="privacy-container" data-i18n="privacy_policy_text">
     
   
 
@@ -286,4 +298,5 @@
   </footer>
   </body>
   <script src="script.js"></script>
+  <script src="assets/js/i18n.js"></script>
 </html>
