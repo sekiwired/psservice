@@ -165,6 +165,7 @@
     applyTranslations(dict);                  // swap in all strings
     initSwitcher(lang);                       // wire up the dropdown (if any)
     initFlagSwitcher(lang);                   // wire up flag buttons (if any)
+    document.dispatchEvent(new CustomEvent('i18nApplied', { detail: { lang } }));
 
     // Set the <html lang="xx"> attribute – good for accessibility & SEO
     document.documentElement.lang = lang;

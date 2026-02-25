@@ -92,48 +92,60 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     };
 
-    // Build compact overlay from existing card content (single source of truth).
-    serviceCards.forEach((card) => {
-      const title = card.querySelector('.service-title')?.textContent.trim() || '';
-      const summary = card.querySelector('.service-summary .service-description')?.textContent.trim() || '';
-      const iconSvg = card.querySelector('.service-icon svg');
-      const points = Array.from(card.querySelectorAll('.service-detail-list li'))
-        .map((li) => li.textContent.trim())
-        .filter(Boolean);
-      const note = card.querySelector('.service-note')?.textContent.trim();
-      if (note) points.push(note);
+    // Build compact overlay from current card DOM text (called on load + after i18n).
+    function buildOverlayContent() {
+      servicesOverlayList.innerHTML = '';
+      serviceCards.forEach((card) => {
+        const title = card.querySelector('.service-title')?.textContent.trim() || '';
+        const summary = card.querySelector('.service-summary .service-description')?.textContent.trim() || '';
+        const iconSvg = card.querySelector('.service-icon svg');
+        const points = Array.from(card.querySelectorAll('.service-detail-list li'))
+          .map((li) => li.textContent.trim())
+          .filter(Boolean);
+        const note = card.querySelector('.service-note')?.textContent.trim();
+        if (note) points.push(note);
 
-      const item = document.createElement('article');
-      item.className = 'overlay-service-item';
+        const item = document.createElement('article');
+        item.className = 'overlay-service-item';
 
-      const head = document.createElement('div');
-      head.className = 'overlay-service-head';
+        const head = document.createElement('div');
+        head.className = 'overlay-service-head';
 
-      const icon = document.createElement('span');
-      icon.className = 'overlay-service-icon';
-      if (iconSvg) icon.appendChild(iconSvg.cloneNode(true));
+        const icon = document.createElement('span');
+        icon.className = 'overlay-service-icon';
+        if (iconSvg) icon.appendChild(iconSvg.cloneNode(true));
 
-      const titleEl = document.createElement('h4');
-      titleEl.className = 'overlay-service-title';
-      titleEl.textContent = title;
+        const titleEl = document.createElement('h4');
+        titleEl.className = 'overlay-service-title';
+        titleEl.textContent = title;
 
-      head.append(icon, titleEl);
+        head.append(icon, titleEl);
 
-      const summaryEl = document.createElement('p');
-      summaryEl.className = 'overlay-service-summary';
-      summaryEl.textContent = summary;
+        const summaryEl = document.createElement('p');
+        summaryEl.className = 'overlay-service-summary';
+        summaryEl.textContent = summary;
 
-      const listEl = document.createElement('ul');
-      listEl.className = 'overlay-service-points';
-      points.forEach((line) => {
-        const li = document.createElement('li');
-        li.textContent = line;
-        listEl.appendChild(li);
+        const listEl = document.createElement('ul');
+        listEl.className = 'overlay-service-points';
+        points.forEach((line) => {
+          const li = document.createElement('li');
+          li.textContent = line;
+          listEl.appendChild(li);
+        });
+
+        item.append(head, summaryEl, listEl);
+        servicesOverlayList.appendChild(item);
       });
+    }
 
-      item.append(head, summaryEl, listEl);
-      servicesOverlayList.appendChild(item);
+    // Build once immediately (covers English / cached lang with no i18n swap).
+    buildOverlayContent();
 
+    // Rebuild after i18n applies translations so overlay reflects the active language.
+    document.addEventListener('i18nApplied', buildOverlayContent);
+
+    // Wire up click/keyboard handlers once (separate from content building).
+    serviceCards.forEach((card) => {
       card.setAttribute('role', 'button');
       card.setAttribute('tabindex', '0');
       card.addEventListener('click', openOverlay);

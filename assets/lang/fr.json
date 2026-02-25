@@ -49,9 +49,9 @@
   "svc_home_summary": "Aide pour les tâches du quotidien et surveillance de votre propriété pendant votre absence",
   "svc_home_detail": "<ul class=\"service-detail-list\"><li>Je peux effectuer des tâches ménagères légères</li><li>Je peux garder votre maison pendant votre absence</li><li>Je peux obtenir des devis et coordonner avec les artisans locaux</li><li>Je peux vous aider à préparer votre gîte pour l'accueil de nouveaux locataires</li><li>Je peux gérer le gîte si vous êtes absent(e)</li></ul>",
 
-  "svc_french_title": "Cours de Français et Services Administratifs",
-  "svc_french_summary": "Pratique de la conversation française et aide avec les formulaires, démarches et traduction",
-  "svc_french_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider à améliorer votre français à l'oral et à gagner en confiance pour interagir avec la communauté locale</li><li>Je peux vous aider à remplir des formulaires et des documents administratifs</li><li>Je peux traduire des documents</li></ul><p class=\"service-note\">À noter : je ne suis pas spécialiste de la Carte de Séjour. Je peux vous aider dans une certaine mesure, mais je n'effectue pas la procédure à votre place.</p>",
+  "svc_french_title": "Cours d'Anglais et Services Administratifs",
+  "svc_french_summary": "Pratique de la conversation anglaise et aide avec les formulaires, démarches et traduction",
+  "svc_french_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider à améliorer votre anglais à l'oral et à gagner en confiance pour interagir avec la communauté anglophone</li><li>Je peux vous aider à remplir des formulaires et des documents administratifs</li><li>Je peux traduire des documents</li></ul><p class=\"service-note\">À noter : je ne suis pas spécialiste de la Carte de Séjour. Je peux vous aider dans une certaine mesure, mais je n'effectue pas la procédure à votre place.</p>",
 
   "svc_custom_title": "Assistance Sur Mesure",
   "svc_custom_summary": "D'autres services d'assistance adaptés à vos besoins spécifiques",

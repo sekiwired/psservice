@@ -1003,7 +1003,6 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 }
 
 .lang-btn.lang-active {
-  border-color: var(--color-primary);
   opacity: 1;
 }
 
