@@ -26,7 +26,7 @@
   <meta name="author" content="Pauline Service">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.paulineservice.com/">
-  
+
 
   <meta property="og:title" content="Pauline Service - Your Personal Support in Nontron">
   <meta property="og:description" content="Reliable personal services and support in Nontron, Dordogne (24).">
@@ -68,8 +68,8 @@
     }
   }
   </script>
-  
-  <title data-i18n="title">Pauline Service - Personal Support in Nontron Area</title>
+
+  <title data-i18n="page_title">Pauline Service - Personal Support in Nontron Area</title>
   <style>
     .hero {
         height:20vh;
@@ -99,19 +99,35 @@
         <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
       </button>
       <nav class="desktop-nav">
-        <a href="/index.html#services" class="nav-link" data-i18n="header_nav_services">Services</a>
-        <a href="/index.html#about" class="nav-link" data-i18n="header_nav_about">About</a>
+        <a href="/index.html#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="/index.html#about" class="nav-link" data-i18n="nav_about">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="/index.html#contact" class="nav-link nav-link-emphasis" data-i18n="header_nav_contact">Contact</a>
+        <a href="/index.html#contact" class="nav-link nav-link-emphasis" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en" aria-label="English">
+            <img src="assets/images/uk.png" alt="EN" class="lang-flag">
+          </button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français">
+            <img src="assets/images/fr.png" alt="FR" class="lang-flag">
+          </button>
+        </div>
       </nav>
     </div>
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mobile-menu hidden">
       <div class="container mobile-menu-container">
-        <a href="/index.html#services" class="nav-link" data-i18n="header_nav_services">Services</a>
-        <a href="/index.html#about" class="nav-link" data-i18n="header_nav_services">About</a>
+        <a href="/index.html#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="/index.html#about" class="nav-link" data-i18n="nav_about">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="/index.html#contact" class="nav-link" data-i18n="header_nav_services">Contact</a>
+        <a href="/index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher lang-switcher-mobile">
+          <button class="lang-btn" data-lang="en" aria-label="English">
+            <img src="assets/images/uk.png" alt="EN" class="lang-flag">
+          </button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français">
+            <img src="assets/images/fr.png" alt="FR" class="lang-flag">
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -119,22 +135,20 @@
       <div id="parallax-bg" class="parallax-bg"></div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 class="hero-title" data-i18n="page_title_content">Privacy policy</h1>
+        <h1 class="hero-title" data-i18n="privacy_page_title">Privacy Policy</h1>
       </div>
     </section>
-  <div class="privacy-container" data-i18n="privacy_policy_text">
-    
-  
+  <div class="privacy-container" data-i18n="privacy_content">
 
   <h2>1. Introduction</h2>
   <p>
-    This privacy policy aims to inform users of the website <strong>paulineservice.com</strong> 
-    about how their personal data may be collected and processed, in compliance with the 
-    <strong>General Data Protection Regulation (GDPR)</strong> and the French 
+    This privacy policy aims to inform users of the website <strong>paulineservice.com</strong>
+    about how their personal data may be collected and processed, in compliance with the
+    <strong>General Data Protection Regulation (GDPR)</strong> and the French
     <strong>Data Protection Act (Informatique et Libertés)</strong>.
   </p>
   <p>
-    We place great importance on the protection of your privacy. No personal data is collected 
+    We place great importance on the protection of your privacy. No personal data is collected
     without your knowledge, and we do not use <strong>any cookies or trackers</strong> on this website.
   </p>
 
@@ -181,7 +195,7 @@
   </p>
   <ul>
     <li>Information requests: up to 3 years after the last contact,</li>
-    <li>Client data: for the duration of the contractual relationship, then archived in accordance 
+    <li>Client data: for the duration of the contractual relationship, then archived in accordance
         with legal requirements (particularly accounting obligations).</li>
   </ul>
 
@@ -189,14 +203,14 @@
 
   <h2>5. Data Sharing</h2>
   <p>
-    Your data are <strong>never sold or transferred to third parties nor shared with any parties</strong>. 
+    Your data are <strong>never sold or transferred to third parties nor shared with any parties</strong>.
   </p>
 
   <hr>
 
   <h2>6. Data Security</h2>
   <p>
-    We implement all appropriate technical and organizational measures to protect your personal data 
+    We implement all appropriate technical and organizational measures to protect your personal data
     against loss, unauthorized access, disclosure, alteration, or destruction.
   </p>
 
@@ -213,64 +227,19 @@
     <li>Right to data portability.</li>
   </ul>
   <p>
-    To exercise your rights, please contact us at: 📩<br>
-    <canvas id="email-canvas" width="340" height="24" style="cursor:pointer; width:340px; height:24px;"></canvas>
-    <noscript>Enable JavaScript to view the email address.</noscript>
-
-    <script>
-    const encodedEmail = "Y29udGFjdEBwYXVsaW5lc2VydmljZS5jb20=";
-
-    (function () {
-    const decoded = atob(encodedEmail);             
-
-    const c = document.getElementById('email-canvas');
-    const ctx = c.getContext('2d');
-    const themeLinkColor = getComputedStyle(document.documentElement)
-      .getPropertyValue('--color-primary-dark')
-      .trim() || '#cc8a46';
-
-    // --- Retina / High DPI scaling ---
-    const dpr = window.devicePixelRatio || 1;
-    const cssWidth = c.width;
-    const cssHeight = c.height;
-    c.width = cssWidth * dpr;
-    c.height = cssHeight * dpr;
-    ctx.scale(dpr, dpr);
-
-    // draw text
-    ctx.font = "400 16px system-ui, NexaBook";
-    ctx.fillStyle = themeLinkColor;
-    ctx.fillText(decoded, 0, 15);
-    
-    const textWidth = ctx.measureText(decoded).width;
-    const underlineY = 17; // slightly below baseline
-    ctx.beginPath();
-    ctx.moveTo(0, underlineY);
-    ctx.lineTo(0 + textWidth, underlineY);
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = themeLinkColor;
-    ctx.stroke();
-
-    // make canvas clickable
-    c.addEventListener('click', () => {
-        window.location.href = 'mailto:' + decoded;
-    });
-
-
-    })();
-    </script><br>
+    To exercise your rights, please contact us using the <a href="/#contact">contact form</a> on our homepage.
   </p>
   <p>
-    You also have the right to lodge a complaint with the 
-    <strong>CNIL (Commission Nationale de l’Informatique et des Libertés)</strong>: 
+    You also have the right to lodge a complaint with the
+    <strong>CNIL (Commission Nationale de l'Informatique et des Libertés)</strong>:
     <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a>.
   </p>
 
   <hr>
 
-  <h2>9. Changes to this Policy</h2>
+  <h2>8. Changes to this Policy</h2>
   <p>
-    We reserve the right to modify this privacy policy at any time in order to remain compliant with 
+    We reserve the right to modify this privacy policy at any time in order to remain compliant with
     legal and regulatory developments. The applicable version is the one published on the website.
   </p>
   </div>
@@ -279,22 +248,22 @@
       <div class="footer-top">
         <div class="footer-brand">
           <h3 class="footer-title" id="footer-title">Pauline Service</h3>
-          <p class="footer-subtitle">Personal Support in Dordogne</p>
+          <p class="footer-subtitle" data-i18n="footer_subtitle">Personal Support in Dordogne</p>
         </div>
         <div class="footer-nav">
-          <a href="/index.html#services" class="footer-link">Services</a>
-          <a href="/index.html#about" class="footer-link">About</a>
+          <a href="/index.html#services" class="footer-link" data-i18n="footer_nav_services">Services</a>
+          <a href="/index.html#about" class="footer-link" data-i18n="footer_nav_about">About</a>
           <!--<a href="#testimonials" class="footer-link">Testimonials</a>-->
-          <a href="/index.html#contact" class="footer-link">Contact</a>
+          <a href="/index.html#contact" class="footer-link" data-i18n="footer_nav_contact">Contact</a>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="copyright">
-          © <span id="current-year"></span> paulineservice.com All rights reserved.
+          © <span id="current-year"></span> paulineservice.com <span data-i18n="footer_rights">All rights reserved.</span>
         </p>
         <div class="footer-legal">
-          <a href="/privacy.html" class="footer-legal-link">Privacy Policy</a>
-          <a href="/terms.html" class="footer-legal-link">Terms of Service</a>
+          <a href="/privacy.html" class="footer-legal-link" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="/terms.html" class="footer-legal-link" data-i18n="footer_terms">Terms of Service</a>
         </div>
       </div>
     </div>

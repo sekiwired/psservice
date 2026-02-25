@@ -968,3 +968,45 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 
 .logo-badge {display:none;}
 .testimonials {display:none;}
+
+/* ── Language switcher (flag buttons) ─────────────────────────────────── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 1rem;
+}
+
+.lang-switcher-mobile {
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+
+.lang-btn {
+  background: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 4px;
+  line-height: 0;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.lang-btn .lang-flag {
+  width: 22px;
+  height: auto;
+  display: block;
+}
+
+.lang-btn.lang-inactive {
+  opacity: 0.4;
+}
+
+.lang-btn.lang-active {
+  border-color: var(--color-primary);
+  opacity: 1;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+}

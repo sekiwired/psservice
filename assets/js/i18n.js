@@ -1,11 +1,13 @@
 /* assets/js/i18n.js ------------------------------------------------------ */
 /*
    Lightweight multilingual helper for static sites.
-   - Detects the visitor’s preferred language (with a fallback).
+   - Detects the visitor's preferred language (with a fallback).
    - Loads the matching <lang>.json file from assets/lang/.
    - Replaces every element that carries a data‑i18n attribute.
+   - Elements with data‑i18n‑placeholder get their placeholder updated.
+   - Flag buttons with data‑lang attribute act as language switchers.
    - Optional language selector (<select id="langSwitcher">) remembers the
-     user’s choice via localStorage.
+     user's choice via localStorage.
 */
 
 (() => {
@@ -17,7 +19,7 @@
    *
    * 1️⃣ Prefer a language the user explicitly selected earlier (localStorage).
    * 2️⃣ Otherwise use the first entry of navigator.languages (ordered list).
-   * 3️⃣ Fallback to navigator.language (single value) if the array isn’t present.
+   * 3️⃣ Fallback to navigator.language (single value) if the array isn't present.
    * 4️⃣ Strip any region/sub‑tag (e.g. "en‑US" → "en").
    * 5️⃣ Normalise to lower‑case and handle both hyphens and underscores.
    *
@@ -72,6 +74,9 @@
    * string from the dictionary. Handles normal elements and input/button
    * controls that display a value instead of innerText.
    *
+   * Elements marked with `data-i18n-placeholder="key"` get their placeholder
+   * attribute updated.
+   *
    * @param {Object} dict - Mapping of keys → translated strings.
    */
   function applyTranslations(dict) {
@@ -94,6 +99,14 @@
           // Plain text → keep it safe as text
           el.textContent = text;
         }
+      }
+    });
+
+    // Handle placeholder translations
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (dict.hasOwnProperty(key)) {
+        el.placeholder = dict[key];
       }
     });
   }
@@ -121,6 +134,29 @@
   }
 
   /**
+   * Initialise flag buttons as language switchers.
+   *
+   * Any element with a `data-lang="xx"` attribute will:
+   *  - receive a `lang-active` class if it matches the current language,
+   *    or a `lang-inactive` class otherwise.
+   *  - trigger a language switch and page reload on click.
+   *
+   * @param {string} currentLang - The language currently in use.
+   */
+  function initFlagSwitcher(currentLang) {
+    document.querySelectorAll('[data-lang]').forEach(btn => {
+      const lang = btn.getAttribute('data-lang');
+      btn.classList.add(lang === currentLang ? 'lang-active' : 'lang-inactive');
+
+      btn.addEventListener('click', () => {
+        if (lang === currentLang) return; // already active
+        localStorage.setItem(LANG_STORAGE_KEY, lang);
+        location.reload();
+      });
+    });
+  }
+
+  /**
    * Bootstrap the whole process once the DOM is ready.
    */
   window.addEventListener('DOMContentLoaded', async () => {
@@ -128,6 +164,7 @@
     const dict = await loadTranslations(lang); // fetch the appropriate JSON
     applyTranslations(dict);                  // swap in all strings
     initSwitcher(lang);                       // wire up the dropdown (if any)
+    initFlagSwitcher(lang);                   // wire up flag buttons (if any)
 
     // Set the <html lang="xx"> attribute – good for accessibility & SEO
     document.documentElement.lang = lang;

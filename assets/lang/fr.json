@@ -1,7 +1,117 @@
 {
-  "title": "Pauline Service - Personal Support in Nontron Area",
-  "nav_home": "Home",
-  "nav_about": "About",
-  "hero_tagline": "Your trusted partner for …",
-  "cta_contact": "Contact us"
+  "page_title": "Pauline Service - Assistance Personnelle dans la Région de Nontron",
+
+  "nav_services": "Services",
+  "nav_about": "À propos",
+  "nav_contact": "Contact",
+
+  "footer_subtitle": "Assistance Personnelle en Dordogne",
+  "footer_nav_services": "Services",
+  "footer_nav_about": "À propos",
+  "footer_nav_contact": "Contact",
+  "footer_privacy": "Politique de Confidentialité",
+  "footer_terms": "Conditions d'Utilisation",
+  "footer_rights": "Tous droits réservés.",
+
+  "hero_title": "D'aventurière du monde à aide locale en Dordogne",
+  "hero_subtitle": "Une aide pratique pour la communauté locale de Nontron et ses environs",
+  "hero_btn_services": "Services",
+  "hero_btn_contact": "Me Contacter",
+
+  "services_title": "Ce que je peux faire pour vous",
+  "services_description": "Une aide pratique adaptée à la communauté locale en Dordogne",
+
+  "svc_declutter_title": "Désencombrement et Organisation",
+  "svc_declutter_summary": "Créer des espaces rangés, trajets à la déchetterie avec une remorque, aide au tri",
+  "svc_declutter_detail": "<ul class=\"service-detail-list\"><li>Je peux créer des rangements efficaces, vous aider à trier ce qui est important à garder, ce qui peut aller à la recyclerie ou à la déchetterie et ce qui peut être vendu</li><li>Je peux vous apporter la motivation supplémentaire dont vous avez besoin pour démarrer ce projet que vous repoussez depuis un moment</li></ul>",
+
+  "svc_grocery_title": "Courses, Commissions et Déplacements",
+  "svc_grocery_summary": "Gérer les courses, autres commissions et transport",
+  "svc_grocery_detail": "<ul class=\"service-detail-list\"><li>Je peux faire vos courses, les emballer et les livrer, avec ou sans vous, dans les supermarchés ou sur les marchés hebdomadaires de produits frais</li><li>Je peux faire vos commissions et vous aider dans les tâches du quotidien</li><li>Je peux vous conduire où vous devez aller : aéroport, gares, centres commerciaux, rendez-vous médicaux</li></ul>",
+
+  "svc_outings_title": "Sorties Accompagnées",
+  "svc_outings_summary": "Vous accompagner en sortie, traduction et guidage",
+  "svc_outings_detail": "<ul class=\"service-detail-list\"><li>Je peux être votre accompagnatrice francophone pour les sorties que vous souhaitez faire</li><li>Je peux être guide pour vos amis en visite de l'étranger, les emmener au Périgord Noir ou dans les vignobles de Bordeaux/Cognac par exemple</li><li>Je peux aussi simplement être quelqu'un avec qui partager une tasse de thé</li></ul>",
+
+  "svc_relocation_title": "Déménagement et Installation",
+  "svc_relocation_summary": "Vous aider à préparer votre déménagement, localement ou à l'international",
+  "svc_relocation_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider dans votre recherche immobilière</li><li>Je peux vous aider pour le tri, l'emballage/déballage, le choix d'un déménageur, contacter les fournisseurs d'énergie et gérer toute la paperasse</li><li>Je peux nettoyer la maison avant la vente ou avant l'emménagement</li></ul>",
+
+  "svc_pet_title": "Garde d'Animaux",
+  "svc_pet_summary": "Garder votre animal chez vous pendant votre absence",
+  "svc_pet_detail": "<ul class=\"service-detail-list\"><li>Je peux leur tenir compagnie, les emmener en promenade et jouer avec eux</li><li>Je peux m'en occuper comme s'ils étaient les miens et vous envoyer des photos et vidéos</li></ul>",
+
+  "svc_medical_title": "Médical",
+  "svc_medical_summary": "Trouver des médecins et spécialistes, prendre des rendez-vous, traduire",
+  "svc_medical_detail": "<ul class=\"service-detail-list\"><li>Je peux rechercher et appeler des médecins ou spécialistes pour prendre un rendez-vous</li><li>Je peux assurer la traduction pendant votre rendez-vous médical si nécessaire</li><li>Je peux vous conduire à vos rendez-vous</li><li>Je peux vous aider avec Ameli et les assurances</li><li>Je peux vous assister de toutes les manières nécessaires pendant votre convalescence</li></ul>",
+
+  "svc_home_title": "Assistance à Domicile et Gestion Immobilière",
+  "svc_home_summary": "Aide pour les tâches du quotidien et surveillance de votre propriété pendant votre absence",
+  "svc_home_detail": "<ul class=\"service-detail-list\"><li>Je peux effectuer des tâches ménagères légères</li><li>Je peux garder votre maison pendant votre absence</li><li>Je peux obtenir des devis et coordonner avec les artisans locaux</li><li>Je peux vous aider à préparer votre gîte pour l'accueil de nouveaux locataires</li><li>Je peux gérer le gîte si vous êtes absent(e)</li></ul>",
+
+  "svc_french_title": "Cours de Français et Services Administratifs",
+  "svc_french_summary": "Pratique de la conversation française et aide avec les formulaires, démarches et traduction",
+  "svc_french_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider à améliorer votre français à l'oral et à gagner en confiance pour interagir avec la communauté locale</li><li>Je peux vous aider à remplir des formulaires et des documents administratifs</li><li>Je peux traduire des documents</li></ul><p class=\"service-note\">À noter : je ne suis pas spécialiste de la Carte de Séjour. Je peux vous aider dans une certaine mesure, mais je n'effectue pas la procédure à votre place.</p>",
+
+  "svc_custom_title": "Assistance Sur Mesure",
+  "svc_custom_summary": "D'autres services d'assistance adaptés à vos besoins spécifiques",
+  "svc_custom_detail": "<ul class=\"service-detail-list\"><li>Je peux faire (presque) tout ce que vous pouvez imaginer</li><li>Mon objectif est d'alléger les obstacles et de rendre votre vie ici plus agréable</li></ul>",
+
+  "about_title": "À propos de Pauline",
+  "about_text_1": "Après 22 ans de vie à l'étranger au Royaume-Uni, au Maroc, au Sri Lanka, au Japon, en Thaïlande et en Australie, je suis rentrée en France où j'ai grandi. <br>Et j'ai dû repartir de zéro. Le fromage et le vin m'ont manqué, mais pas la complexité du système.",
+  "about_text_2": "Je connais l'excitation d'un nouveau départ, mais aussi l'épuisement que représente le fait de faire face aux défis d'une nouvelle vie.",
+  "about_text_3": "J'ai donc une mission claire : aider la communauté anglophone à naviguer dans le beau mais souvent complexe mode de vie français.<br>J'ai décidé de lancer Pauline Service parce que je voulais que mon travail ait du sens. J'aime vraiment les gens et je veux les aider.<br>Je ne suis pas simplement une prestataire de services ; je suis membre de cette communauté, ici pour faciliter la vie de mes voisins.",
+  "about_text_4": "<strong>Je crois en la flexibilité, pas seulement dans mon emploi du temps, mais aussi dans mes tarifs.</strong><br>Parce que chaque situation est unique, je propose des tarifs flexibles et un accompagnement sur mesure pour votre projet et votre budget.",
+  "about_text_5": "Je crois en un travail porteur de sens qui soutient notre communauté locale, et je le ferai toujours avec la même énergie et la même empathie.",
+  "about_text_6": "N'hésitez donc pas à me contacter pour voir ensemble comment je pourrais vous aider.",
+  "about_ps": "<br>PS : Oui, je peux le faire",
+
+  "badge_bilingual": "Bilingue",
+  "badge_organised": "Organisée",
+  "badge_reliable": "Fiable",
+  "badge_professional": "Professionnelle",
+  "badge_responsive": "Réactive",
+
+  "who_newcomers_title": "Pour les nouveaux arrivants :",
+  "who_newcomers_text_1": "Laissez-moi gérer la frustration de la « paperasserie », le manque de clarté sur qui appeler et par où commencer, les pauses déjeuner interminables et les jours fériés de la bureaucratie.",
+  "who_newcomers_text_2": "Laissez-moi vous aider à vous installer et à vous sentir vraiment chez vous.",
+  "who_established_title": "Pour ceux déjà installés ici :",
+  "who_established_text_1": "La plupart d'entre vous êtes en France depuis des années, voire des décennies, et en vieillissant, nous réalisons que nous pouvons avoir besoin de lever le pied.",
+  "who_established_text_2": "Je me spécialise dans le désencombrement et l'organisation de votre espace, la préparation de votre prochain déménagement ou du prochain chapitre de votre vie.",
+  "who_established_text_3": "Besoin d'un transport vers Limoges, Angoulême ou Périgueux ? Un traducteur pour un rendez-vous ? Ou simplement quelqu'un pour faire avancer les choses ?",
+  "who_established_text_4": "Mes services sont aussi flexibles que vos besoins.",
+
+  "testimonials_title": "Témoignages Clients",
+  "testimonials_description": "Découvrez ce que nos clients disent de nos services d'assistance personnelle.",
+  "testimonial_1_text": "Pauline a été une véritable bouée de sauvetage lors de l'achat de ma propriété en Dordogne. Sa maîtrise des deux langues et des procédures locales a tout simplifié.",
+  "testimonial_2_text": "En tant que nouveaux résidents à Nontron, nous étions submergés par les papiers. Pauline nous a guidés à chaque étape avec patience et expertise.",
+  "testimonial_3_text": "Je n'aurais pas pu naviguer dans le système de santé français sans l'aide de Pauline. Elle a organisé tous mes rendez-vous et m'a même accompagné quand nécessaire.",
+  "testimonial_4_text": "Pauline s'occupe de notre maison de vacances en notre absence. Son souci du détail et sa fiabilité nous donnent une totale tranquillité d'esprit.",
+
+  "contact_title": "Me Contacter",
+  "contact_description": "Contactez-moi pour discuter de la façon dont je peux vous aider",
+  "contact_info_subtitle": "Coordonnées",
+  "contact_label_phone": "Téléphone",
+  "contact_label_email": "E-mail",
+  "contact_label_location": "Localisation",
+  "contact_label_hours": "Horaires",
+  "contact_hours_value": "Lundi - Vendredi : 9h - 18h",
+  "service_area_title": "Zone d'Intervention",
+  "service_area_description": "Nontron et ses environs dans le Périgord Vert jusqu'à 30 kilomètres",
+  "contact_form_subtitle": "Envoyer un Message",
+  "form_label_name": "Nom",
+  "form_placeholder_name": "Votre nom",
+  "form_label_email_field": "E-mail",
+  "form_placeholder_email": "Votre e-mail",
+  "form_label_phone_field": "Numéro de téléphone",
+  "form_placeholder_phone": "Votre numéro de téléphone",
+  "form_label_message": "Message",
+  "form_placeholder_message": "Comment puis-je vous aider ?",
+  "form_submit": "Envoyer",
+
+  "privacy_page_title": "Politique de Confidentialité",
+  "privacy_content": "<h2>1. Introduction</h2><p>Cette politique de confidentialité vise à informer les utilisateurs du site <strong>paulineservice.com</strong> sur la manière dont leurs données personnelles peuvent être collectées et traitées, en conformité avec le <strong>Règlement Général sur la Protection des Données (RGPD)</strong> et la loi française <strong>Informatique et Libertés</strong>.</p><p>Nous accordons une grande importance à la protection de votre vie privée. Aucune donnée personnelle n'est collectée sans votre connaissance, et nous n'utilisons <strong>aucun cookie ni traceur</strong> sur ce site.</p><hr><h2>2. Données collectées et finalités</h2><p>Notre site <strong>n'utilise pas de cookies</strong> et ne collecte aucune donnée de navigation.</p><p>Les seules données qui peuvent être collectées sont celles que vous fournissez volontairement via :</p><ul><li>Le formulaire de contact,</li><li>L'e‑mail direct,</li><li>La communication téléphonique.</li></ul><p>Ces données sont utilisées exclusivement pour :</p><ul><li>Répondre à vos demandes,</li><li>Assurer le suivi de notre relation commerciale (le cas échéant),</li><li>Remplir nos obligations légales et réglementaires.</li></ul><hr><h2>3. Fondement juridique du traitement</h2><p>Le traitement de vos données repose sur :</p><ul><li>Votre <strong>consentement</strong> (par exemple lorsque vous nous envoyez un message via le formulaire de contact ou par e‑mail),</li><li>La <strong>exécution d'un contrat</strong> ou des mesures précontractuelles (si vous devenez client),</li><li><strong>Des obligations légales</strong> (par exemple la conservation des factures à des fins comptables).</li></ul><hr><h2>4. Durée de conservation des données</h2><p>Vos données sont conservées uniquement pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées :</p><ul><li>Demandes d'information : jusqu'à 3 ans après le dernier contact,</li><li>Données clients : pendant la durée de la relation contractuelle, puis archivées conformément aux exigences légales (notamment les obligations comptables).</li></ul><hr><h2>5. Partage des données</h2><p>Vos données ne sont <strong>jamais vendues, transférées à des tiers ni partagées avec quiconque</strong>.</p><hr><h2>6. Sécurité des données</h2><p>Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre la perte, l'accès non autorisé, la divulgation, la modification ou la destruction.</p><hr><h2>7. Vos droits</h2><p>Conformément au RGPD et à la loi française Informatique et Libertés, vous disposez des droits suivants :</p><ul><li>Droit d'accès, de rectification, de mise à jour et d'effacement de vos données,</li><li>Droit de limitation du traitement,</li><li>Droit d'opposition au traitement,</li><li>Droit à la portabilité des données.</li></ul><p>Pour exercer vos droits, veuillez nous contacter via le <a href=\"/#contact\">formulaire de contact</a> sur notre page d'accueil.</p><p>Vous avez également le droit d'introduire une réclamation auprès de la <strong>CNIL (Commission Nationale de l'Informatique et des Libertés)</strong> : <a href=\"https://www.cnil.fr\" target=\"_blank\">www.cnil.fr</a>.</p><hr><h2>8. Modifications de la présente politique</h2><p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment afin de rester en conformité avec les évolutions légales et réglementaires. La version applicable est celle publiée sur le site.</p>",
+
+  "terms_page_title": "Conditions d'Utilisation",
+  "terms_content": "<h2>1. Objet</h2><p>Les présentes Conditions d'Utilisation (ci-après « Conditions ») régissent l'accès et l'utilisation du site web <strong>paulineservice.com</strong> (ci-après « le Site »), publié par une entreprise immatriculée en France sous le numéro SIRET 92941661800023, dont le siège social est à Abjat/Bandiat.</p><p>En accédant au Site ou en l'utilisant, vous reconnaissez avoir lu, compris et accepté d'être lié par ces Conditions et par les lois et réglementations applicables.</p><hr><h2>2. Accès au Site</h2><p>Le Site est accessible gratuitement à tout utilisateur disposant d'un accès à internet. Tous les coûts liés à l'accès au Site (matériel, logiciel, connexion internet, etc.) sont à la charge de l'utilisateur.</p><p>Nous nous efforçons de garantir l'accès au Site 24h/24 et 7j/7 ; toutefois, nous ne pouvons être tenus responsables en cas d'interruption de service, de maintenance ou de problèmes techniques.</p><hr><h2>3. Propriété Intellectuelle</h2><p>Tout le contenu disponible sur le Site (textes, images, logos, marques, noms de domaine, design, structure) est protégé par des droits de propriété intellectuelle et reste la propriété exclusive de <strong>Pauline Service</strong> ou de ses partenaires.</p><p>Toute reproduction, représentation, modification ou redistribution de tout ou partie du Site sans consentement écrit préalable est strictement interdite et peut donner lieu à des poursuites judiciaires.</p><hr><h2>4. Obligations de l'Utilisateur</h2><p>Les utilisateurs s'engagent à ne pas :</p><ul><li>Utiliser le Site à des fins illicites,</li><li>Tenter d'obtenir un accès non autorisé au Site ou à son infrastructure,</li><li>Perturber ou tenter de perturber le bon fonctionnement du Site,</li><li>Utiliser le Site d'une manière susceptible de porter atteinte aux droits, à la réputation ou à la sécurité de <strong>Pauline Service</strong> ou d'autres utilisateurs.</li></ul><hr><h2>5. Responsabilité</h2><p>Les informations fournies sur le Site sont à titre purement informatif. Nous faisons tout notre possible pour en garantir l'exactitude et les mettre à jour régulièrement, mais nous ne garantissons pas que ces informations soient complètes, exactes ou à jour.</p><p><strong>paulineservice.com</strong> ne saurait être tenu responsable de :</p><ul><li>Tout dommage direct ou indirect résultant de l'utilisation du Site,</li><li>Toute inexactitude, omission ou erreur dans le contenu,</li><li>Toute interruption ou indisponibilité du Site.</li></ul><hr><h2>6. Données Personnelles</h2><p>Nous n'utilisons pas de cookies ni de traceurs sur ce Site. Pour plus d'informations sur la gestion des données personnelles, veuillez consulter notre <a href=\"/privacy.html\">Politique de Confidentialité</a>.</p><hr><h2>7. Droit Applicable et Juridiction</h2><p>Les présentes Conditions sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux du ressort du siège social de <strong>Pauline Service</strong> seront seuls compétents.</p><hr><h2>8. Contact</h2><p>Pour toute question concernant ces Conditions ou le Site, veuillez nous contacter via le <a href=\"/#contact\">formulaire de contact</a> sur notre page d'accueil.</p>"
 }

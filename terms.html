@@ -14,7 +14,7 @@
   <meta name="author" content="Pauline Service">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.paulineservice.com/">
-  
+
 
   <meta property="og:title" content="Pauline Service - Your Personal Support in Nontron">
   <meta property="og:description" content="Reliable personal services and support in Nontron, Dordogne (24).">
@@ -56,8 +56,8 @@
     }
   }
   </script>
-  
-  <title>Pauline Service - Personal Support in Nontron Area</title>
+
+  <title data-i18n="page_title">Pauline Service - Personal Support in Nontron Area</title>
   <style>
     .hero {
         height:20vh;
@@ -74,11 +74,6 @@
       margin: 40px auto;
       padding: 0 20px;
     }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 30px 0;
-    }
   </style>
 </head>
 <body>
@@ -92,19 +87,35 @@
         <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
       </button>
       <nav class="desktop-nav">
-        <a href="/index.html#services" class="nav-link">Services</a>
-        <a href="/index.html#about" class="nav-link">About</a>
+        <a href="/index.html#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="/index.html#about" class="nav-link" data-i18n="nav_about">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="/index.html#contact" class="nav-link nav-link-emphasis">Contact</a>
+        <a href="/index.html#contact" class="nav-link nav-link-emphasis" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en" aria-label="English">
+            <img src="assets/images/uk.png" alt="EN" class="lang-flag">
+          </button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français">
+            <img src="assets/images/fr.png" alt="FR" class="lang-flag">
+          </button>
+        </div>
       </nav>
     </div>
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mobile-menu hidden">
       <div class="container mobile-menu-container">
-        <a href="/index.html#services" class="nav-link">Services</a>
-        <a href="/index.html#about" class="nav-link">About</a>
+        <a href="/index.html#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="/index.html#about" class="nav-link" data-i18n="nav_about">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="/index.html#contact" class="nav-link">Contact</a>
+        <a href="/index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher lang-switcher-mobile">
+          <button class="lang-btn" data-lang="en" aria-label="English">
+            <img src="assets/images/uk.png" alt="EN" class="lang-flag">
+          </button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français">
+            <img src="assets/images/fr.png" alt="FR" class="lang-flag">
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -112,18 +123,18 @@
       <div id="parallax-bg" class="parallax-bg"></div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 class="hero-title">Terms of service</h1>
+        <h1 class="hero-title" data-i18n="terms_page_title">Terms of Service</h1>
       </div>
     </section>
-  <div class="terms-container">
+  <div class="terms-container" data-i18n="terms_content">
   <h2>1. Purpose</h2>
   <p>
-    The present Terms of Service (hereinafter “Terms”) govern the access and use of the website 
-    <strong>paulineservice.com</strong> (hereinafter “the Website”), published by a company registered in France under SIRET number 92941661800023, 
+    The present Terms of Service (hereinafter "Terms") govern the access and use of the website
+    <strong>paulineservice.com</strong> (hereinafter "the Website"), published by a company registered in France under SIRET number 92941661800023,
     with its registered office at Abjat/Bandiat.
   </p>
   <p>
-    By accessing or using the Website, you acknowledge that you have read, understood, and agree 
+    By accessing or using the Website, you acknowledge that you have read, understood, and agree
     to be bound by these Terms and by applicable laws and regulations.
   </p>
 
@@ -131,12 +142,12 @@
 
   <h2>2. Access to the Website</h2>
   <p>
-    The Website is accessible free of charge to any user with internet access. All costs related 
-    to accessing the Website (hardware, software, internet connection, etc.) are at the user’s 
+    The Website is accessible free of charge to any user with internet access. All costs related
+    to accessing the Website (hardware, software, internet connection, etc.) are at the user's
     own expense.
   </p>
   <p>
-    We strive to ensure access to the Website 24/7; however, we cannot be held liable in case of 
+    We strive to ensure access to the Website 24/7; however, we cannot be held liable in case of
     service interruption, maintenance, or technical issues.
   </p>
 
@@ -144,12 +155,12 @@
 
   <h2>3. Intellectual Property</h2>
   <p>
-    All content available on the Website (texts, images, logos, trademarks, domain names, design, 
-    structure) is protected by intellectual property rights and remains the exclusive property of 
-    <strong>[Pauline Service]</strong> or its partners.
+    All content available on the Website (texts, images, logos, trademarks, domain names, design,
+    structure) is protected by intellectual property rights and remains the exclusive property of
+    <strong>Pauline Service</strong> or its partners.
   </p>
   <p>
-    Any reproduction, representation, modification, or redistribution of all or part of the Website 
+    Any reproduction, representation, modification, or redistribution of all or part of the Website
     without prior written consent is strictly prohibited and may give rise to legal action.
   </p>
 
@@ -163,7 +174,7 @@
     <li>Use the Website for unlawful purposes,</li>
     <li>Attempt to gain unauthorized access to the Website or its infrastructure,</li>
     <li>Disrupt or attempt to disrupt the proper functioning of the Website,</li>
-    <li>Use the Website in a way that could harm the rights, reputation, or security of 
+    <li>Use the Website in a way that could harm the rights, reputation, or security of
         <strong>Pauline Service</strong> or other users.</li>
   </ul>
 
@@ -171,8 +182,8 @@
 
   <h2>5. Liability</h2>
   <p>
-    The information provided on the Website is for general informational purposes only. We make 
-    every effort to ensure its accuracy and update it regularly, but we do not guarantee that the 
+    The information provided on the Website is for general informational purposes only. We make
+    every effort to ensure its accuracy and update it regularly, but we do not guarantee that the
     information is complete, accurate, or up-to-date.
   </p>
   <p>
@@ -188,69 +199,25 @@
 
   <h2>6. Personal Data</h2>
   <p>
-    We do not use cookies or trackers on this Website. For more information on how personal data 
-    is handled, please consult our <a href="/privacy-policy.html">Privacy Policy</a>.
+    We do not use cookies or trackers on this Website. For more information on how personal data
+    is handled, please consult our <a href="/privacy.html">Privacy Policy</a>.
   </p>
 
   <hr>
 
   <h2>7. Applicable Law and Jurisdiction</h2>
   <p>
-    These Terms are governed by French law. In the event of a dispute, and failing an amicable 
-    resolution, the courts of the jurisdiction of the registered office of <strong>Pauline Service</strong> 
+    These Terms are governed by French law. In the event of a dispute, and failing an amicable
+    resolution, the courts of the jurisdiction of the registered office of <strong>Pauline Service</strong>
     shall have exclusive competence.
   </p>
 
   <hr>
 
-  <h2>9. Contact</h2>
+  <h2>8. Contact</h2>
   <p>
-    For any questions concerning these Terms or the Website, you may contact us at: 📩<br>
-     <canvas id="email-canvas" width="340" height="24" style="cursor:pointer; width:340px; height:24px;"></canvas>
-    <noscript>Enable JavaScript to view the email address.</noscript>
-
-    <script>
-    const encodedEmail = "Y29udGFjdEBwYXVsaW5lc2VydmljZS5jb20=";
-
-    (function () {
-    const decoded = atob(encodedEmail);             
-
-    const c = document.getElementById('email-canvas');
-    const ctx = c.getContext('2d');
-    const themeLinkColor = getComputedStyle(document.documentElement)
-      .getPropertyValue('--color-primary-dark')
-      .trim() || '#cc8a46';
-
-    // --- Retina / High DPI scaling ---
-    const dpr = window.devicePixelRatio || 1;
-    const cssWidth = c.width;
-    const cssHeight = c.height;
-    c.width = cssWidth * dpr;
-    c.height = cssHeight * dpr;
-    ctx.scale(dpr, dpr);
-
-    // draw text
-    ctx.font = "400 16px system-ui, NexaBook";
-    ctx.fillStyle = themeLinkColor;
-    ctx.fillText(decoded, 0, 15);
-    
-    const textWidth = ctx.measureText(decoded).width;
-    const underlineY = 17; // slightly below baseline
-    ctx.beginPath();
-    ctx.moveTo(0, underlineY);
-    ctx.lineTo(0 + textWidth, underlineY);
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = themeLinkColor;
-    ctx.stroke();
-
-    // make canvas clickable
-    c.addEventListener('click', () => {
-        window.location.href = 'mailto:' + decoded;
-    });
-
-
-    })();
-    </script><br>
+    For any questions concerning these Terms or the Website, please contact us using the
+    <a href="/#contact">contact form</a> on our homepage.
   </p>
   </div>
   <footer class="footer">
@@ -258,26 +225,27 @@
       <div class="footer-top">
         <div class="footer-brand">
           <h3 class="footer-title" id="footer-title">Pauline Service</h3>
-          <p class="footer-subtitle">Personal Support in Dordogne</p>
+          <p class="footer-subtitle" data-i18n="footer_subtitle">Personal Support in Dordogne</p>
         </div>
         <div class="footer-nav">
-          <a href="/index.html#services" class="footer-link">Services</a>
-          <a href="/index.html#about" class="footer-link">About</a>
+          <a href="/index.html#services" class="footer-link" data-i18n="footer_nav_services">Services</a>
+          <a href="/index.html#about" class="footer-link" data-i18n="footer_nav_about">About</a>
           <!--<a href="#testimonials" class="footer-link">Testimonials</a>-->
-          <a href="/index.html#contact" class="footer-link">Contact</a>
+          <a href="/index.html#contact" class="footer-link" data-i18n="footer_nav_contact">Contact</a>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="copyright">
-          © <span id="current-year"></span> paulineservice.com All rights reserved.
+          © <span id="current-year"></span> paulineservice.com <span data-i18n="footer_rights">All rights reserved.</span>
         </p>
         <div class="footer-legal">
-          <a href="/privacy.html" class="footer-legal-link">Privacy Policy</a>
-          <a href="/terms.html" class="footer-legal-link">Terms of Service</a>
+          <a href="/privacy.html" class="footer-legal-link" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="/terms.html" class="footer-legal-link" data-i18n="footer_terms">Terms of Service</a>
         </div>
       </div>
     </div>
   </footer>
   </body>
   <script src="script.js"></script>
+  <script src="assets/js/i18n.js"></script>
 </html>

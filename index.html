@@ -26,7 +26,7 @@
   <meta name="author" content="Pauline Service">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.paulineservice.com/">
-  
+
 
   <meta property="og:title" content="Pauline Service - Personal Services in Nontron">
   <meta property="og:description" content="Reliable personal services and assistance in Nontron, Dordogne (24).">
@@ -68,8 +68,8 @@
     }
   }
   </script>
-  
-  <title>Pauline Service - Personal Support in Nontron Area</title>
+
+  <title data-i18n="page_title">Pauline Service - Personal Support in Nontron Area</title>
 
 </head>
 <body>
@@ -83,19 +83,35 @@
         <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
       </button>
       <nav class="desktop-nav">
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="#contact" class="nav-link nav-link-emphasis">Contact</a>
+        <a href="#contact" class="nav-link nav-link-emphasis" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en" aria-label="English">
+            <img src="assets/images/uk.png" alt="EN" class="lang-flag">
+          </button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français">
+            <img src="assets/images/fr.png" alt="FR" class="lang-flag">
+          </button>
+        </div>
       </nav>
     </div>
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mobile-menu hidden">
       <div class="container mobile-menu-container">
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
         <!--<a href="#testimonials" class="nav-link">Testimonials</a>-->
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher lang-switcher-mobile">
+          <button class="lang-btn" data-lang="en" aria-label="English">
+            <img src="assets/images/uk.png" alt="EN" class="lang-flag">
+          </button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français">
+            <img src="assets/images/fr.png" alt="FR" class="lang-flag">
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -105,11 +121,11 @@
       <div id="parallax-bg" class="parallax-bg"></div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 class="hero-title">From global traveler to local helper In Dordogne</h1>
-        <p class="hero-subtitle">Practical help for the local community in Nontron and surrounding area</p>
+        <h1 class="hero-title" data-i18n="hero_title">From global traveler to local helper in Dordogne</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Practical help for the local community in Nontron and surrounding area</p>
         <div class="hero-buttons">
-          <a href="#services" class="btn btn-light"><span>Services</span></a>
-          <a href="#contact" class="btn btn-primary"><span>Contact Me</span></a>
+          <a href="#services" class="btn btn-light"><span data-i18n="hero_btn_services">Services</span></a>
+          <a href="#contact" class="btn btn-primary"><span data-i18n="hero_btn_contact">Contact Me</span></a>
         </div>
       </div>
     </section>
@@ -117,9 +133,9 @@
     <section id="services" class="services">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">What I can do for you</h2>
-          <p class="section-description desc-tablet">Practical help tailored to the local community in Dordogne</p>
-          <p class="section-description desc-mobile">Practical help tailored to the local community in Dordogne</p>
+          <h2 class="section-title" data-i18n="services_title">What I can do for you</h2>
+          <p class="section-description desc-tablet" data-i18n="services_description">Practical help tailored to the local community in Dordogne</p>
+          <p class="section-description desc-mobile" data-i18n="services_description">Practical help tailored to the local community in Dordogne</p>
         </div>
         <div class="services-grid-wrap">
         <div class="services-grid" id="services-grid">
@@ -133,7 +149,7 @@
                   <path d="M8 14h8"/>
                 </svg>
               </div>
-              <h3 class="service-title">Decluttering and Organisation</h3>
+              <h3 class="service-title" data-i18n="svc_declutter_title">Decluttering and Organisation</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -143,9 +159,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Create tidy spaces, trips to the tip with a trailer, help with sorting out</p>
+                    <p class="service-description" data-i18n="svc_declutter_summary">Create tidy spaces, trips to the tip with a trailer, help with sorting out</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_declutter_detail">
                     <ul class="service-detail-list">
                       <li>I can create efficient storage, help you to sort out what is important for you to keep, what can be going to the recyclerie or to the tip and what can be sold</li>
                       <li>I can give you the extra motivation you need to get started on the project that you have been putting off for a while</li>
@@ -165,7 +181,7 @@
                   <path d="M2 2h3l2.2 11.5a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L21 6H6"/>
                 </svg>
               </div>
-              <h3 class="service-title">Grocery Shopping, Errands and Rides</h3>
+              <h3 class="service-title" data-i18n="svc_grocery_title">Grocery Shopping, Errands and Rides</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -175,10 +191,10 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Handle the grocery run, other errands and transportation</p>
+                    <p class="service-description" data-i18n="svc_grocery_summary">Handle the grocery run, other errands and transportation</p>
                   </div>
                   </br>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_grocery_detail">
                     <ul class="service-detail-list">
                       <li>I can shop, pack and deliver groceries, with or without you, from the supermarkets or weekly fresh produce markets</li>
                       <li>I can run your errands, help you with mundane tasks</li>
@@ -201,7 +217,7 @@
                   <path d="M9 20v-6a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v6"/>
                 </svg>
               </div>
-              <h3 class="service-title">Accompanied Outings</h3>
+              <h3 class="service-title" data-i18n="svc_outings_title">Accompanied Outings</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -211,9 +227,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Join you for outings, translating and guiding</p>
+                    <p class="service-description" data-i18n="svc_outings_summary">Join you for outings, translating and guiding</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_outings_detail">
                     <ul class="service-detail-list">
                       <li>I can be a French-speaking companion for trips you wish to take</li>
                       <li>I can be a personal guide to your friends visiting from abroad, taking them to Perigord Noir or Bordeaux/Cognac vineyards for instance</li>
@@ -235,7 +251,7 @@
                   <circle cx="18" cy="17" r="2"/>
                 </svg>
               </div>
-              <h3 class="service-title">Relocation</h3>
+              <h3 class="service-title" data-i18n="svc_relocation_title">Relocation</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -245,9 +261,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Help prepare your relocation whether locally or internationally</p>
+                    <p class="service-description" data-i18n="svc_relocation_summary">Help prepare your relocation whether locally or internationally</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_relocation_detail">
                     <ul class="service-detail-list">
                       <li>I can help you with your property search</li>
                       <li>I can help you with the sorting, packing/unpacking, choosing a removalist, contact utilities providers and getting all the paperwork sorted</li>
@@ -270,7 +286,7 @@
                   <path d="M8.5 16.5c1.5-1 5.5-1 7 0s1.5 3.5-3.5 4-5-2.5-3.5-4z"/>
                 </svg>
               </div>
-              <h3 class="service-title">Pet Sitter</h3>
+              <h3 class="service-title" data-i18n="svc_pet_title">Pet Sitter</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -280,9 +296,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Looking after your pet in your home environment while you are away</p>
+                    <p class="service-description" data-i18n="svc_pet_summary">Looking after your pet in your home environment while you are away</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_pet_detail">
                     <ul class="service-detail-list">
                       <li>I can keep them company, take them for walks and play with them</li>
                       <li>I can look after them as if they were my own and send you pictures and videos</li>
@@ -302,7 +318,7 @@
                   <rect x="3" y="3" width="18" height="18" rx="2"/>
                 </svg>
               </div>
-              <h3 class="service-title">Medical</h3>
+              <h3 class="service-title" data-i18n="svc_medical_title">Medical</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -312,9 +328,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Find doctors and specialists, make appointments, translate</p>
+                    <p class="service-description" data-i18n="svc_medical_summary">Find doctors and specialists, make appointments, translate</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_medical_detail">
                     <ul class="service-detail-list">
                       <li>I can research and call doctors or specialists to make an appointment</li>
                       <li>I can translate during your appointment with the medical professional if required</li>
@@ -337,7 +353,7 @@
                   <path d="M9 22v-7h6v7"/>
                 </svg>
               </div>
-              <h3 class="service-title">Home Assistance and Property Management</h3>
+              <h3 class="service-title" data-i18n="svc_home_title">Home Assistance and Property Management</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -347,9 +363,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Assist with every day home tasks and look after your property when you are away</p>
+                    <p class="service-description" data-i18n="svc_home_summary">Assist with every day home tasks and look after your property when you are away</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_home_detail">
                     <ul class="service-detail-list">
                       <li>I can perform light household chores</li>
                       <li>I can look after your house while you are away</li>
@@ -373,7 +389,7 @@
                   <path d="M8 13h6"/>
                 </svg>
               </div>
-              <h3 class="service-title">French Lessons and Administrative Services</h3>
+              <h3 class="service-title" data-i18n="svc_french_title">French Lessons and Administrative Services</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -383,9 +399,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Offer French conversation practice and help with forms, procedures and translation</p>
+                    <p class="service-description" data-i18n="svc_french_summary">Offer French conversation practice and help with forms, procedures and translation</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_french_detail">
                     <ul class="service-detail-list">
                       <li>I can help you improve your French conversation and build up your confidence to interact with the local community</li>
                       <li>I can assist with filling out the forms and paperwork</li>
@@ -406,7 +422,7 @@
                   <path d="M5 16l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/>
                 </svg>
               </div>
-              <h3 class="service-title">Custom Assistance</h3>
+              <h3 class="service-title" data-i18n="svc_custom_title">Custom Assistance</h3>
               <div class="service-grid-spacer"></div>
             </div>
             <button class="service-back" type="button" aria-label="Show less"><</button>
@@ -416,9 +432,9 @@
 <div class="service-clip">
                 <div class="service-slider">
                   <div class="service-panel service-summary">
-                    <p class="service-description">Other assistance services tailored to your specific needs</p>
+                    <p class="service-description" data-i18n="svc_custom_summary">Other assistance services tailored to your specific needs</p>
                   </div>
-                  <div class="service-panel service-detail">
+                  <div class="service-panel service-detail" data-i18n="svc_custom_detail">
                     <ul class="service-detail-list">
                       <li>I can do (almost) anything else you can think about</li>
                       <li>My aim is to alleviate the hurdles and make your life here more enjoyable</li>
@@ -449,46 +465,47 @@
         <div class="about-grid">
           <div class="about-image-container">
             <div class="about-image-decoration top-left"></div>
-            <img 
-              src="assets/neat.webp" 
-              alt="Professional woman" 
+            <img
+              src="assets/neat.webp"
+              alt="Professional woman"
               class="about-image "
             />
             <div class="about-image-decoration bottom-right"></div>
           </div>
           <div class="about-content">
-            <h2 class="section-title text-left">About Pauline</h2>
+            <h2 class="section-title text-left" data-i18n="about_title">About Pauline</h2>
             <div class="about-divider"></div>
-            <p class="about-text">
-              After 22 years living abroad in the UK, Morocco, Sri Lanka, Japan, Thailand and Australia, I moved back to France where I grew up. </br>And I had to start from scratch.
+            <p class="about-text" data-i18n="about_text_1">
+              After 22 years living abroad in the UK, Morocco, Sri Lanka, Japan, Thailand and Australia, I moved back to France where I grew up. <br>And I had to start from scratch.
               I have missed the cheese and the wine but I have not missed the complexity of the system.
             </p>
-            <p class="about-text">
+            <p class="about-text" data-i18n="about_text_2">
               Knowing the excitement of a new start, I am also familiar with the exhaustion that comes with facing the challenges of a new life.
             </p>
-            <p class="about-text">
-              So I have a clear mission: to help the English-speaking community navigate the beautiful but often complicated French way of life.</br>
-              I decided to launch Pauline Service because I wanted my work to make sense. I genuinely like people and want to help.</br>
+            <p class="about-text" data-i18n="about_text_3">
+              So I have a clear mission: to help the English-speaking community navigate the beautiful but often complicated French way of life.<br>
+              I decided to launch Pauline Service because I wanted my work to make sense. I genuinely like people and want to help.<br>
               I'm not just a service provider; I'm a member of this community here to make my neighbours' life easier.
             </p>
-            <p class="about-text">
-              <strong>I believe in flexibility, not just in my schedule, but in my rates.</strong></br>
+            <p class="about-text" data-i18n="about_text_4">
+              <strong>I believe in flexibility, not just in my schedule, but in my rates.</strong><br>
               Because every situation is unique, I offer flexible rates and tailor-made support to fit your specific project and budget.
               </p>
-            <p class="about-text">
+            <p class="about-text" data-i18n="about_text_5">
               I believe in meaningful work that supports our local community and I'll always do it with the same energy and empathy.
-            <p class="about-text">
+            </p>
+            <p class="about-text" data-i18n="about_text_6">
               So please, don't hesitate to contact me to have a look together at how I could help.
             </p>
-            <p class="about-text"></br>
+            <p class="about-text" data-i18n="about_ps"><br>
               PS : Oui, can do
             </p>
             <div class="about-badges">
-              <span class="badge"><span>Bilingual</span></span>
-              <span class="badge"><span>Organised </span></span>
-              <span class="badge"><span>Reliable</span></span>
-              <span class="badge"><span>Professional</span></span>
-              <span class="badge"><span>Responsive</span></span>
+              <span class="badge"><span data-i18n="badge_bilingual">Bilingual</span></span>
+              <span class="badge"><span data-i18n="badge_organised">Organised </span></span>
+              <span class="badge"><span data-i18n="badge_reliable">Reliable</span></span>
+              <span class="badge"><span data-i18n="badge_professional">Professional</span></span>
+              <span class="badge"><span data-i18n="badge_responsive">Responsive</span></span>
             </div>
           </div>
         </div>
@@ -499,26 +516,26 @@
       <div class="container">
         <div class="who-grid">
           <div class="who-column">
-            <h3 class="who-title">For the newcomers:</h3>
-            <p class="who-text">
+            <h3 class="who-title" data-i18n="who_newcomers_title">For the newcomers:</h3>
+            <p class="who-text" data-i18n="who_newcomers_text_1">
               Let me handle the frustration of 'red tape', the lack of clarity on who to call and where to start, the endless lunch breaks and public holidays of bureaucracy.
             </p>
-            <p class="who-text">
+            <p class="who-text" data-i18n="who_newcomers_text_2">
               Let me help you to settle and make yourselves truly at home.
             </p>
           </div>
           <div class="who-column">
-            <h3 class="who-title">For the ones already established here:</h3>
-            <p class="who-text">
+            <h3 class="who-title" data-i18n="who_established_title">For the ones already established here:</h3>
+            <p class="who-text" data-i18n="who_established_text_1">
               Most of you have been in France for years or even decades and as we are all aging, we realise we may need to scale back.
             </p>
-            <p class="who-text">
+            <p class="who-text" data-i18n="who_established_text_2">
               I specialise in decluttering and organising your space, prepping your next move or the next chapter of your life.
             </p>
-            <p class="who-text">
+            <p class="who-text" data-i18n="who_established_text_3">
               Need a ride to Limoges, Angouleme or Perigueux? A translator for an appointment? Or just someone to get things done?
             </p>
-            <p class="who-text">
+            <p class="who-text" data-i18n="who_established_text_4">
               My services are as flexible as your needs.
             </p>
           </div>
@@ -529,13 +546,13 @@
     <section id="testimonials" class="testimonials">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Client Testimonials</h2>
-          <p class="section-description">See what our clients have to say about our personal assistance services.</p>
+          <h2 class="section-title" data-i18n="testimonials_title">Client Testimonials</h2>
+          <p class="section-description" data-i18n="testimonials_description">See what our clients have to say about our personal assistance services.</p>
         </div>
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
-            <p class="testimonial-text">Pauline was a lifesaver when dealing with my property purchase in Dordogne. Her knowledge of both languages and local procedures made everything so much easier.</p>
+            <p class="testimonial-text" data-i18n="testimonial_1_text">Pauline was a lifesaver when dealing with my property purchase in Dordogne. Her knowledge of both languages and local procedures made everything so much easier.</p>
             <div class="testimonial-author">
               <p class="author-name">Sarah T.</p>
               <p class="author-location">London, UK</p>
@@ -543,7 +560,7 @@
           </div>
           <div class="testimonial-card">
             <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
-            <p class="testimonial-text">As new residents in Nontron, we were overwhelmed with the paperwork. Pauline guided us through every step with patience and expertise.</p>
+            <p class="testimonial-text" data-i18n="testimonial_2_text">As new residents in Nontron, we were overwhelmed with the paperwork. Pauline guided us through every step with patience and expertise.</p>
             <div class="testimonial-author">
               <p class="author-name">David and Emma R.</p>
               <p class="author-location">Sydney, Australia</p>
@@ -551,7 +568,7 @@
           </div>
           <div class="testimonial-card">
             <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
-            <p class="testimonial-text">I couldn't have navigated the French healthcare system without Pauline's help. She arranged all my appointments and even accompanied me when needed.</p>
+            <p class="testimonial-text" data-i18n="testimonial_3_text">I couldn't have navigated the French healthcare system without Pauline's help. She arranged all my appointments and even accompanied me when needed.</p>
             <div class="testimonial-author">
               <p class="author-name">John M.</p>
               <p class="author-location">Manchester, UK</p>
@@ -559,7 +576,7 @@
           </div>
           <div class="testimonial-card">
             <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
-            <p class="testimonial-text">Pauline looks after our holiday home when we're away. Her attention to detail and reliability give us complete peace of mind.</p>
+            <p class="testimonial-text" data-i18n="testimonial_4_text">Pauline looks after our holiday home when we're away. Her attention to detail and reliability give us complete peace of mind.</p>
             <div class="testimonial-author">
               <p class="author-name">The Wilsons</p>
               <p class="author-location">Melbourne, Australia</p>
@@ -572,19 +589,19 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Contact Me</h2>
-          <p class="section-description">Get in touch to discuss how I can assist you</p>
+          <h2 class="section-title" data-i18n="contact_title">Contact Me</h2>
+          <p class="section-description" data-i18n="contact_description">Get in touch to discuss how I can assist you</p>
         </div>
         <div class="contact-grid">
           <div class="contact-info">
-            <h3 class="contact-subtitle">Contact Information</h3>
+            <h3 class="contact-subtitle" data-i18n="contact_info_subtitle">Contact Information</h3>
             <div class="contact-items">
               <div class="contact-item">
                 <div class="contact-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <div class="contact-detail">
-                  <p class="contact-label" id="contactelt">Phone</p>
+                  <p class="contact-label" id="contactelt" data-i18n="contact_label_phone">Phone</p>
                   <p class="contact-value">
                     <canvas id="phone-canvas" width="260" height="24" style="cursor:pointer; width:260px; height:24px;"></canvas>
                     <noscript>Enable JavaScript to view the phone number.</noscript>
@@ -594,7 +611,7 @@
                     const encoded = "KzMzIDYgNDMgNTkgNDAgNjk=";
 
                     (function () {
-                    const decoded = atob(encoded);                  
+                    const decoded = atob(encoded);
                     const digits = decoded.replace(/\s+/g, '');
 
                     const c = document.getElementById('phone-canvas');
@@ -647,17 +664,17 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </div>
                 <div class="contact-detail">
-                  <p class="contact-label">Email</p>
+                  <p class="contact-label" data-i18n="contact_label_email">Email</p>
                   <p class="contact-value">
                     <canvas id="email-canvas" width="340" height="24" style="cursor:pointer; width:340px; height:24px;"></canvas>
                     <noscript>Enable JavaScript to view the address.</noscript>
 
                     <script>
-                    
+
                     const encdata = "Y29udGFjdEBwYXVsaW5lc2VydmljZS5jb20=";
 
                     (function () {
-                    const decoded = atob(encdata);             
+                    const decoded = atob(encdata);
 
                     const c = document.getElementById('email-canvas');
                     const ctx = c.getContext('2d');
@@ -677,7 +694,7 @@
                     ctx.font = "400 "+fontSize+" NexaBook, Helvetica";
                     ctx.fillStyle = themeLinkColor;
                     ctx.fillText(decoded, 0, 15);
-                    
+
                     const textWidth = ctx.measureText(decoded).width;
                     const underlineY = 17; // slightly below baseline
                     ctx.beginPath();
@@ -697,7 +714,7 @@
                         document.body.removeChild(tempLink);
                     });
 
-                
+
                     })();
                     </script>
 
@@ -710,7 +727,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <div class="contact-detail">
-                  <p class="contact-label">Location</p>
+                  <p class="contact-label" data-i18n="contact_label_location">Location</p>
                   <p class="contact-value">Abjat/Bandiat, Dordogne, France</p>
                 </div>
               </div>
@@ -719,39 +736,39 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </div>
                 <div class="contact-detail">
-                  <p class="contact-label">Hours</p>
-                  <p class="contact-value">Monday - Friday: 9am - 6pm</p>
+                  <p class="contact-label" data-i18n="contact_label_hours">Hours</p>
+                  <p class="contact-value" data-i18n="contact_hours_value">Monday - Friday: 9am - 6pm</p>
                 </div>
               </div>
             </div>
             <div class="service-area">
-              <h4 class="service-area-title">Service Area</h4>
-              <p class="service-area-description">
+              <h4 class="service-area-title" data-i18n="service_area_title">Service Area</h4>
+              <p class="service-area-description" data-i18n="service_area_description">
                 Serving Nontron and surrounding areas in the Perigord Vert up to 30 kilometers
               </p>
             </div>
           </div>
           <div class="contact-form-container">
-            <h3 class="contact-subtitle">Send a Message</h3>
+            <h3 class="contact-subtitle" data-i18n="contact_form_subtitle">Send a Message</h3>
             <form class="contact-form">
               <div class="form-group">
-                <label for="name" class="form-label">Name<span class="required-star">*</span></label>
-                <input type="text" id="name" class="form-input" placeholder="Your name">
+                <label for="name" class="form-label"><span data-i18n="form_label_name">Name</span><span class="required-star">*</span></label>
+                <input type="text" id="name" class="form-input" placeholder="Your name" data-i18n-placeholder="form_placeholder_name">
               </div>
               <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-input" placeholder="Your email">
+                <label for="email" class="form-label" data-i18n="form_label_email_field">Email</label>
+                <input type="email" id="email" class="form-input" placeholder="Your email" data-i18n-placeholder="form_placeholder_email">
               </div>
               <div class="form-group">
-                <label for="phone" class="form-label">Phone number</label>
-                <input type="tel" id="phone" class="form-input" placeholder="Your phone number">
+                <label for="phone" class="form-label" data-i18n="form_label_phone_field">Phone number</label>
+                <input type="tel" id="phone" class="form-input" placeholder="Your phone number" data-i18n-placeholder="form_placeholder_phone">
               </div>
               <div class="form-group">
-                <label for="message" class="form-label">Message<span class="required-star">*</span></label>
+                <label for="message" class="form-label"><span data-i18n="form_label_message">Message</span><span class="required-star">*</span></label>
                 <textarea id="message" class="form-textarea" rows="4"
-                          placeholder="How can I help you?"></textarea>
+                          placeholder="How can I help you?" data-i18n-placeholder="form_placeholder_message"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">Send Message <span class="spinner"></span></button>
+              <button type="submit" class="btn btn-primary btn-block"><span data-i18n="form_submit">Send Message</span> <span class="spinner"></span></button>
             </form>
           </div>
         </div>
@@ -763,22 +780,22 @@
       <div class="footer-top">
         <div class="footer-brand">
           <h3 class="footer-title" id="footer-title">Pauline Service</h3>
-          <p class="footer-subtitle">Personal Support in Dordogne</p>
+          <p class="footer-subtitle" data-i18n="footer_subtitle">Personal Support in Dordogne</p>
         </div>
         <div class="footer-nav">
-          <a href="#services" class="footer-link">Services</a>
-          <a href="#about" class="footer-link">About</a>
+          <a href="#services" class="footer-link" data-i18n="footer_nav_services">Services</a>
+          <a href="#about" class="footer-link" data-i18n="footer_nav_about">About</a>
           <!--<a href="#testimonials" class="footer-link">Testimonials</a>-->
-          <a href="#contact" class="footer-link">Contact</a>
+          <a href="#contact" class="footer-link" data-i18n="footer_nav_contact">Contact</a>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="copyright">
-          © <span id="current-year"></span> paulineservice.com All rights reserved.
+          © <span id="current-year"></span> paulineservice.com <span data-i18n="footer_rights">All rights reserved.</span>
         </p>
         <div class="footer-legal">
-          <a href="/privacy.html" class="footer-legal-link">Privacy Policy</a>
-          <a href="/terms.html" class="footer-legal-link">Terms of Service</a>
+          <a href="/privacy.html" class="footer-legal-link" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="/terms.html" class="footer-legal-link" data-i18n="footer_terms">Terms of Service</a>
         </div>
       </div>
     </div>
