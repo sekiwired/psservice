@@ -58,6 +58,103 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Service cards: click any card to open one compact overlay with all services.
+  const serviceCards = Array.from(document.querySelectorAll('.service-card'));
+  const servicesOverlay = document.getElementById('services-overlay');
+  const servicesSection = document.getElementById('services');
+  const servicesSectionHeight = servicesSection.style.height;
+  const servicesOverlayClose = document.getElementById('services-overlay-close');
+  const servicesOverlayList = document.getElementById('services-overlay-list');
+  const servicesGrid = document.getElementById('services-grid');
+  const aboutSection = document.getElementById('about');
+  const vw = window.innerWidth;
+
+  if (serviceCards.length && servicesOverlay && servicesOverlayClose && servicesOverlayList) {
+    const openOverlay = () => {
+      servicesOverlay.classList.remove('hidden');
+      servicesOverlay.setAttribute('aria-hidden', 'false');
+      servicesGrid.style.opacity = '0';
+      if (vw <= 1160 && vw > 1024) {
+        aboutSection.style.paddingTop = '12rem';
+      }
+      if (vw <= 768 && vw > 640) {
+        servicesSection.style.height = '1600px';
+      }
+    };
+
+    const closeOverlay = () => {
+      servicesOverlay.classList.add('hidden');
+      servicesOverlay.setAttribute('aria-hidden', 'true');
+      servicesGrid.style.opacity = '100';
+      if (vw <= 768 && vw > 640) {
+        servicesSection.style.height = servicesSectionHeight;
+      }
+    };
+
+    // Build compact overlay from existing card content (single source of truth).
+    serviceCards.forEach((card) => {
+      const title = card.querySelector('.service-title')?.textContent.trim() || '';
+      const summary = card.querySelector('.service-summary .service-description')?.textContent.trim() || '';
+      const iconSvg = card.querySelector('.service-icon svg');
+      const points = Array.from(card.querySelectorAll('.service-detail-list li'))
+        .map((li) => li.textContent.trim())
+        .filter(Boolean);
+      const note = card.querySelector('.service-note')?.textContent.trim();
+      if (note) points.push(note);
+
+      const item = document.createElement('article');
+      item.className = 'overlay-service-item';
+
+      const head = document.createElement('div');
+      head.className = 'overlay-service-head';
+
+      const icon = document.createElement('span');
+      icon.className = 'overlay-service-icon';
+      if (iconSvg) icon.appendChild(iconSvg.cloneNode(true));
+
+      const titleEl = document.createElement('h4');
+      titleEl.className = 'overlay-service-title';
+      titleEl.textContent = title;
+
+      head.append(icon, titleEl);
+
+      const summaryEl = document.createElement('p');
+      summaryEl.className = 'overlay-service-summary';
+      summaryEl.textContent = summary;
+
+      const listEl = document.createElement('ul');
+      listEl.className = 'overlay-service-points';
+      points.forEach((line) => {
+        const li = document.createElement('li');
+        li.textContent = line;
+        listEl.appendChild(li);
+      });
+
+      item.append(head, summaryEl, listEl);
+      servicesOverlayList.appendChild(item);
+
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.addEventListener('click', openOverlay);
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openOverlay();
+        }
+      });
+    });
+
+    servicesOverlayClose.addEventListener('click', closeOverlay);
+    servicesOverlay.addEventListener('click', (event) => {
+      if (event.target === servicesOverlay) closeOverlay();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !servicesOverlay.classList.contains('hidden')) {
+        closeOverlay();
+      }
+    });
+  }
   
 // Form submission handling (prevent default for demo)
 const contactForm = document.querySelector('.contact-form');

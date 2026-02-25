@@ -225,6 +225,9 @@
 
     const c = document.getElementById('email-canvas');
     const ctx = c.getContext('2d');
+    const themeLinkColor = getComputedStyle(document.documentElement)
+      .getPropertyValue('--color-primary-dark')
+      .trim() || '#cc8a46';
 
     // --- Retina / High DPI scaling ---
     const dpr = window.devicePixelRatio || 1;
@@ -236,7 +239,7 @@
 
     // draw text
     ctx.font = "400 16px system-ui, NexaBook";
-    ctx.fillStyle = "#0e4c68";
+    ctx.fillStyle = themeLinkColor;
     ctx.fillText(decoded, 0, 15);
     
     const textWidth = ctx.measureText(decoded).width;
@@ -245,7 +248,7 @@
     ctx.moveTo(0, underlineY);
     ctx.lineTo(0 + textWidth, underlineY);
     ctx.lineWidth = 1;
-    ctx.strokeStyle = "#0e4c68";
+    ctx.strokeStyle = themeLinkColor;
     ctx.stroke();
 
     // make canvas clickable
