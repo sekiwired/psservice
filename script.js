@@ -62,34 +62,21 @@ document.addEventListener('DOMContentLoaded', function() {
   // Service cards: click any card to open one compact overlay with all services.
   const serviceCards = Array.from(document.querySelectorAll('.service-card'));
   const servicesOverlay = document.getElementById('services-overlay');
-  const servicesSection = document.getElementById('services');
-  const servicesSectionHeight = servicesSection.style.height;
   const servicesOverlayClose = document.getElementById('services-overlay-close');
   const servicesOverlayList = document.getElementById('services-overlay-list');
   const servicesGrid = document.getElementById('services-grid');
-  const aboutSection = document.getElementById('about');
-  const vw = window.innerWidth;
 
   if (serviceCards.length && servicesOverlay && servicesOverlayClose && servicesOverlayList) {
     const openOverlay = () => {
+      servicesGrid.style.display = 'none';
       servicesOverlay.classList.remove('hidden');
       servicesOverlay.setAttribute('aria-hidden', 'false');
-      servicesGrid.style.opacity = '0';
-      if (vw <= 1160 && vw > 1024) {
-        aboutSection.style.paddingTop = '12rem';
-      }
-      if (vw <= 768 && vw > 640) {
-        servicesSection.style.height = '1600px';
-      }
     };
 
     const closeOverlay = () => {
       servicesOverlay.classList.add('hidden');
       servicesOverlay.setAttribute('aria-hidden', 'true');
-      servicesGrid.style.opacity = '100';
-      if (vw <= 768 && vw > 640) {
-        servicesSection.style.height = servicesSectionHeight;
-      }
+      servicesGrid.style.display = '';
     };
 
     // Build compact overlay from current card DOM text (called on load + after i18n).
