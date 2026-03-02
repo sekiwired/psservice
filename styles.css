@@ -323,80 +323,57 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .services-grid-wrap {
   position: relative;
 }
 .service-card {
   background-color: var(--color-white);
-  --cell-pad-x: 12px;
-  --cell-pad-y: 12px;
-  padding: 0;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 0.1fr 0.6fr 0.7fr 4fr 0.5fr 0.1fr;
-  grid-template-rows: 8px auto 72px 8px;
-  gap: 0;
-  grid-template-areas:
-    ". . . . . ."
-    ". . icon_title title title ."
-    ". arrow_left subtext subtext arrow_right ."
-    ". . . . . .";
-  height: 170px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
 }
 .service-card:hover {
   box-shadow: var(--shadow-md);
 }
 .service-header {
-  display: contents;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .service-icon {
-  margin-bottom: 0;
   color: var(--color-primary);
   flex-shrink: 0;
-  grid-area: icon_title;
-  align-self: center;
-  justify-self: center;
-  padding: var(--cell-pad-y) var(--cell-pad-x);
 }
 .service-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-primary-dark);
-  margin-bottom: 0;
-  grid-area: title;
-  align-self: start;
-  padding: var(--cell-pad-y) var(--cell-pad-x);
+  margin: 0;
+  line-height: 1.3;
 }
 .service-grid-spacer {
   display: none;
 }
 .service-body {
-  grid-area: subtext;
-  position: relative;
   overflow: hidden;
-  align-self: start;
-  height: auto;
-  padding: 0 var(--cell-pad-x);
 }
 .service-clip {
-  height: auto;
   overflow: visible;
 }
 .service-slider {
   display: block;
-  width: 100%;
 }
 .service-panel {
-  flex: none;
-  padding: 0;
-  box-sizing: border-box;
+  display: block;
 }
 .service-description {
   color: var(--color-gray-600);
