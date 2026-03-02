@@ -67,6 +67,9 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+a, button, [role="button"] {
+  cursor: pointer;
+}
 a {
   text-decoration: none;
   color: inherit;
