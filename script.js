@@ -108,10 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         head.append(icon, titleEl);
 
-        const summaryEl = document.createElement('p');
-        summaryEl.className = 'overlay-service-summary';
-        summaryEl.textContent = summary;
-
         const listEl = document.createElement('ul');
         listEl.className = 'overlay-service-points';
         points.forEach((line) => {
@@ -120,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
           listEl.appendChild(li);
         });
 
-        item.append(head, summaryEl, listEl);
+        item.append(head, listEl);
         servicesOverlayList.appendChild(item);
       });
     }

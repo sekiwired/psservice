@@ -498,12 +498,20 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 .overlay-service-points {
   list-style: none;
   margin: 0;
-  padding-top: 4px;
+  padding: 0;
 }
 .overlay-service-points li {
   font-size: 0.92rem;
   color: var(--color-gray-600);
   line-height: 1.5;
+  padding-left: 1rem;
+  position: relative;
+}
+.overlay-service-points li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
 }
 .overlay-service-points li + li {
   margin-top: 0.3rem;
