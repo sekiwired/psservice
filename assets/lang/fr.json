@@ -1,5 +1,5 @@
 {
-  "page_title": "Pauline Service - Assistance Personnelle dans la Région de Nontron",
+  "page_title": "Pauline Service - Aide Locale en Dordogne",
 
   "nav_services": "Services",
   "nav_about": "À propos",
@@ -13,7 +13,7 @@
   "footer_terms": "Conditions d'Utilisation",
   "footer_rights": "Tous droits réservés.",
 
-  "hero_title": "D'aventurière du monde à aide locale en Dordogne",
+  "hero_title": "Aide Locale en Dordogne",
   "hero_subtitle": "Une aide pratique pour la communauté locale de Nontron et ses environs",
   "hero_btn_services": "Services",
   "hero_btn_contact": "Me Contacter",
@@ -21,46 +21,46 @@
   "services_title": "Ce que je peux faire pour vous",
   "services_description": "Une aide pratique adaptée à la communauté locale en Dordogne",
 
-  "svc_declutter_title": "Désencombrement et Organisation",
+  "svc_declutter_title": "Rangement & Organisation",
   "svc_declutter_summary": "Créer des espaces rangés, trajets à la déchetterie avec une remorque, aide au tri",
   "svc_declutter_detail": "<ul class=\"service-detail-list\"><li>Je peux créer des rangements efficaces, vous aider à trier ce qui est important à garder, ce qui peut aller à la recyclerie ou à la déchetterie et ce qui peut être vendu</li><li>Je peux vous apporter la motivation supplémentaire dont vous avez besoin pour démarrer ce projet que vous repoussez depuis un moment</li></ul>",
 
-  "svc_grocery_title": "Courses, Commissions et Déplacements",
+  "svc_grocery_title": "Courses & Déplacements",
   "svc_grocery_summary": "Gérer les courses, autres commissions et transport",
-  "svc_grocery_detail": "<ul class=\"service-detail-list\"><li>Je peux faire vos courses, les emballer et les livrer, avec ou sans vous, dans les supermarchés ou sur les marchés hebdomadaires de produits frais</li><li>Je peux faire vos commissions et vous aider dans les tâches du quotidien</li><li>Je peux vous conduire où vous devez aller : aéroport, gares, centres commerciaux, rendez-vous médicaux</li></ul>",
+  "svc_grocery_detail": "<ul class=\"service-detail-list\"><li>Je peux faire vos courses, les emballer et les livrer, avec ou sans vous, dans les supermarchés ou sur les marchés hebdomadaires de produits frais</li><li>Je peux vous aider dans les tâches du quotidien</li><li>Je peux vous conduire où vous devez aller : aéroport, gares, centres commerciaux, rendez-vous médicaux</li></ul>",
 
   "svc_outings_title": "Sorties Accompagnées",
-  "svc_outings_summary": "Vous accompagner en sortie, traduction et guidage",
-  "svc_outings_detail": "<ul class=\"service-detail-list\"><li>Je peux être votre accompagnatrice francophone pour les sorties que vous souhaitez faire</li><li>Je peux être guide pour vos amis en visite de l'étranger, les emmener au Périgord Noir ou dans les vignobles de Bordeaux/Cognac par exemple</li><li>Je peux aussi simplement être quelqu'un avec qui partager une tasse de thé</li></ul>",
+  "svc_outings_summary": "Vous accompagner en sortie",
+  "svc_outings_detail": "<ul class=\"service-detail-list\"><li>Je peux être guide pour vos amis en visite de l'étranger, les emmener au Périgord Noir ou dans les vignobles de Bordeaux/Cognac par exemple</li><li>Je peux aussi simplement être quelqu'un avec qui partager une tasse de thé</li></ul>",
 
   "svc_relocation_title": "Déménagement et Installation",
   "svc_relocation_summary": "Vous aider à préparer votre déménagement, localement ou à l'international",
-  "svc_relocation_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider dans votre recherche immobilière</li><li>Je peux vous aider pour le tri, l'emballage/déballage, le choix d'un déménageur, contacter les fournisseurs d'énergie et gérer toute la paperasse</li><li>Je peux nettoyer la maison avant la vente ou avant l'emménagement</li></ul>",
+  "svc_relocation_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider dans votre recherche immobilière</li><li>Je peux vous aider pour le tri, l'emballage/déballage, le choix d'un déménageur, contacter les fournisseurs d'énergie et gérer l'administratif</li><li>Je peux nettoyer la maison avant la vente ou avant l'emménagement</li></ul>",
 
   "svc_pet_title": "Garde d'Animaux",
   "svc_pet_summary": "Garder votre animal chez vous pendant votre absence",
   "svc_pet_detail": "<ul class=\"service-detail-list\"><li>Je peux leur tenir compagnie, les emmener en promenade et jouer avec eux</li><li>Je peux m'en occuper comme s'ils étaient les miens et vous envoyer des photos et vidéos</li></ul>",
 
   "svc_medical_title": "Médical",
-  "svc_medical_summary": "Trouver des médecins et spécialistes, prendre des rendez-vous, traduire",
-  "svc_medical_detail": "<ul class=\"service-detail-list\"><li>Je peux rechercher et appeler des médecins ou spécialistes pour prendre un rendez-vous</li><li>Je peux assurer la traduction pendant votre rendez-vous médical si nécessaire</li><li>Je peux vous conduire à vos rendez-vous</li><li>Je peux vous aider avec Ameli et les assurances</li><li>Je peux vous assister de toutes les manières nécessaires pendant votre convalescence</li></ul>",
+  "svc_medical_summary": "Trouver des médecins et spécialistes, prendre des rendez-vous",
+  "svc_medical_detail": "<ul class=\"service-detail-list\"><li>Je peux rechercher et appeler des médecins ou spécialistes pour prendre un rendez-vous</li><li>Je peux vous conduire à vos rendez-vous</li><li>Je peux vous aider avec Ameli et les assurances</li><li>Je peux vous assister de toutes les manières nécessaires pendant votre convalescence</li></ul>",
 
-  "svc_home_title": "Assistance à Domicile et Gestion Immobilière",
+  "svc_home_title": "Assitance à Domicile & Conciergerie",
   "svc_home_summary": "Aide pour les tâches du quotidien et surveillance de votre propriété pendant votre absence",
-  "svc_home_detail": "<ul class=\"service-detail-list\"><li>Je peux effectuer des tâches ménagères légères</li><li>Je peux garder votre maison pendant votre absence</li><li>Je peux obtenir des devis et coordonner avec les artisans locaux</li><li>Je peux vous aider à préparer votre gîte pour l'accueil de nouveaux locataires</li><li>Je peux gérer le gîte si vous êtes absent(e)</li></ul>",
+  "svc_home_detail": "<ul class=\"service-detail-list\"><li>Je peux effectuer des tâches ménagères légères</li><li>Je peux garder votre maison pendant votre absence</li><li>Je peux obtenir des devis et coordonner avec les artisans locaux</li><li>Je peux vous aider à préparer votre gîte pour l'accueil de nouveaux locataires</li><li>Je peux gérer le gîte si vous êtes absent</li></ul>",
 
   "svc_french_title": "Cours d'Anglais et Services Administratifs",
-  "svc_french_summary": "Pratique de la conversation anglaise et aide avec les formulaires, démarches et traduction",
-  "svc_french_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider à améliorer votre anglais à l'oral et à gagner en confiance pour interagir avec la communauté anglophone</li><li>Je peux vous aider à remplir des formulaires et des documents administratifs</li><li>Je peux traduire des documents</li></ul><p class=\"service-note\">À noter : je ne suis pas spécialiste de la Carte de Séjour. Je peux vous aider dans une certaine mesure, mais je n'effectue pas la procédure à votre place.</p>",
+  "svc_french_summary": "Pratique de la conversation anglaise et aide avec les formulaires et vos démarches",
+  "svc_french_detail": "<ul class=\"service-detail-list\"><li>Je peux vous aider à améliorer votre anglais à l'oral et à l'écrit</li><li>Je peux faire du soutien scolaire en Anglais et aider à la préparation des examens</li></ul>",
 
   "svc_custom_title": "Assistance Sur Mesure",
   "svc_custom_summary": "D'autres services d'assistance adaptés à vos besoins spécifiques",
-  "svc_custom_detail": "<ul class=\"service-detail-list\"><li>Je peux faire (presque) tout ce que vous pouvez imaginer</li><li>Mon objectif est d'alléger les obstacles et de rendre votre vie ici plus agréable</li></ul>",
+  "svc_custom_detail": "<ul class=\"service-detail-list\"><li>Je peux faire (presque) tout ce que vous pouvez imaginer</li><li>Mon objectif est de rendre votre vie plus simple</li></ul>",
 
   "about_title": "À propos de Pauline",
   "about_text_1": "Après 22 ans de vie à l'étranger au Royaume-Uni, au Maroc, au Sri Lanka, au Japon, en Thaïlande et en Australie, je suis rentrée en France où j'ai grandi. <br>Et j'ai dû repartir de zéro. Le fromage et le vin m'ont manqué, mais pas la complexité du système.",
-  "about_text_2": "Je connais l'excitation d'un nouveau départ, mais aussi l'épuisement que représente le fait de faire face aux défis d'une nouvelle vie.",
-  "about_text_3": "J'ai donc une mission claire : aider la communauté anglophone à naviguer dans le beau mais souvent complexe mode de vie français.<br>J'ai décidé de lancer Pauline Service parce que je voulais que mon travail ait du sens. J'aime vraiment les gens et je veux les aider.<br>Je ne suis pas simplement une prestataire de services ; je suis membre de cette communauté, ici pour faciliter la vie de mes voisins.",
+  "about_text_2": "J'ai décidé de lancer Pauline Service parce que je voulais que mon travail ait du sens.<br>L'idée premiere était d'aider la communauté anglophone à naviguer la complexité de notre beau pays mais je me suis rendue compte que je pouvais également offrir des services susceptibles d'être utiles aux français.",
+  "about_text_3": "Je ne suis pas simplement une prestataire de services ; je suis membre de cette communauté, ici pour faciliter la vie de mes voisins.",
   "about_text_4": "<strong>Je crois en la flexibilité, pas seulement dans mon emploi du temps, mais aussi dans mes tarifs.</strong><br>Parce que chaque situation est unique, je propose des tarifs flexibles et un accompagnement sur mesure pour votre projet et votre budget.",
   "about_text_5": "Je crois en un travail porteur de sens qui soutient notre communauté locale, et je le ferai toujours avec la même énergie et la même empathie.",
   "about_text_6": "N'hésitez donc pas à me contacter pour voir ensemble comment je pourrais vous aider.",

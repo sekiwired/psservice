@@ -371,7 +371,7 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   color: var(--color-primary-dark);
   margin-bottom: 0;
   grid-area: title;
-  align-self: center;
+  align-self: start;
   padding: var(--cell-pad-y) var(--cell-pad-x);
 }
 .service-grid-spacer {
@@ -381,7 +381,7 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
   grid-area: subtext;
   position: relative;
   overflow: hidden;
-  align-self: center;
+  align-self: start;
   height: auto;
   padding: 0 var(--cell-pad-x);
 }
@@ -534,6 +534,9 @@ button.btn-send:disabled { opacity: .7; cursor: not-allowed; }
 .about {
   padding: 4rem 0;
   background-color: var(--color-white);
+}
+html[lang="fr"] #who {
+  display: none;
 }
 .who {
   padding: 2rem 0.75rem 4rem 0.75rem;
