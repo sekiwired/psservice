@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(~/Documents/Code/Helpers/smart_commit.sh WIP: pre-i18n snapshot - assets, styles and html updates:*)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "Bash(git:*)"
     ]
   }
 }
