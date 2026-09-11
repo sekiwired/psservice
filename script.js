@@ -310,3 +310,63 @@ if (contactForm) {
   });
 
 });
+
+// Prices table: rows come from assets/data/prices.json, labels from the active dictionary.
+document.addEventListener('i18nApplied', async () => {
+  const table = document.getElementById('prices-table');
+  if (!table) return;
+
+  const dict = window.i18n?.dict ?? {};
+  const t = (key) => dict[key] ?? '';
+
+  let rows;
+  try {
+    const response = await fetch('assets/data/prices.json');
+    if (!response.ok) throw new Error(response.status);
+    ({ rows } = await response.json());
+  } catch (error) {
+    console.error('prices: assets/data/prices.json could not be loaded', error);
+    return;
+  }
+
+  const head = document.createElement('thead');
+  const headRow = document.createElement('tr');
+  ['prices_col_service', 'prices_col_rate', 'prices_col_travel'].forEach((key) => {
+    const th = document.createElement('th');
+    th.textContent = t(key);
+    headRow.appendChild(th);
+  });
+  head.appendChild(headRow);
+
+  const body = document.createElement('tbody');
+  rows.forEach((row, index) => {
+    const tr = document.createElement('tr');
+    const classes = [];
+    if (index % 2 === 0) classes.push('row-gold');
+    if (row.style === 'sub') classes.push('row-sub');
+    if (row.merged) classes.push('row-merged');
+    if (classes.length) tr.className = classes.join(' ');
+
+    const service = document.createElement('td');
+    service.textContent = t(`price_${row.id}`);
+    tr.appendChild(service);
+
+    if (row.merged) {
+      const merged = document.createElement('td');
+      merged.className = 'cell-merged';
+      merged.colSpan = 2;
+      merged.textContent = t(`price_${row.id}_value`);
+      tr.appendChild(merged);
+    } else {
+      [row.rate, row.travel].forEach((value) => {
+        const td = document.createElement('td');
+        td.textContent = value ?? '';
+        tr.appendChild(td);
+      });
+    }
+
+    body.appendChild(tr);
+  });
+
+  table.replaceChildren(head, body);
+});

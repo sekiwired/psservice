@@ -163,6 +163,7 @@
     const lang = detectLang();                // <-- locale detection happens here
     const dict = await loadTranslations(lang); // fetch the appropriate JSON
     applyTranslations(dict);                  // swap in all strings
+    window.i18n = { lang, dict };             // expose for scripts that build markup
     initSwitcher(lang);                       // wire up the dropdown (if any)
     initFlagSwitcher(lang);                   // wire up flag buttons (if any)
     document.dispatchEvent(new CustomEvent('i18nApplied', { detail: { lang } }));
